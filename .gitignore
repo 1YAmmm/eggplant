@@ -1,0 +1,13 @@
+﻿venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Phase 1: dataset at models ay malaki, hindi isinasama sa git
+ml/data/
+ml/models/
+
+# Phase 2 (Next.js)
+web/node_modules/
+web/.next/
+.env*
