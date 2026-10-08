@@ -105,20 +105,20 @@ Flexible ang tagal. Beginner ka, kaya okay lang kung humaba. Huwag lumipat sa su
 **Goal:** Kumpletong dataset na 200/50/50 bawat class, malinis, at walang leakage.
 
 ### 1A. Alamin muna kung sapat ang images
-- [ ] Gumawa ng `ml/DATA_SO URCES.md` para sa listahan ng sources at citations
-- [ ] I-download ang mga datasets (tingnan ang Sources sa baba)
-- [ ] **Bilangin ang available images bawat class.** Kailangan ng **300 bawat class** (200+50+50)
-- [ ] Kung kulang ang isang class (malamang ang `flea_beetle` at `thrips`), isulat kung ilan ang kulang
+- [x] Gumawa ng `ml/DATA_SO URCES.md` para sa listahan ng sources at citations: nagawa na, pero may mga source na kailangan mong punan (tingnan ang "KAILANGAN MONG PUNAN")
+- [x] I-download ang mga datasets (tingnan ang Sources sa baba): may sarili ka nang organized dataset, kaya Mendeley Eggplant Dataset (Original) at Tomato Insect Pests lang ang ginamit pandagdag. Hindi na kailangan ang Roboflow at BrinjalFruitX
+- [x] **Bilangin ang available images bawat class.** Kailangan ng **300 bawat class** (200+50+50): pagkatapos linisin, may 214 (aphids), 220 (flea_beetle), 373 (fruit_shoot_borer), 276 (healthy), 300 (thrips) na unique at tamang larawan
+- [x] Kung kulang ang isang class (malamang ang `flea_beetle` at `thrips`), isulat kung ilan ang kulang: kulang ng 86 (aphids), 80 (flea_beetle), 24 (healthy). Pinunan mula sa Mendeley
 
 ### 1B. Pag-ayos
 - [x] Gumawa ng 5 folders sa `ml/data/raw_sorted/`, isa bawat class
-- [ ] Kopyahin ang tamang images sa bawat folder (hindi ang buong dataset, ang mga class lang na kailangan)
-- [ ] **Gamitin ang original images lang, hindi ang augmented versions.** Kung isasama ang augmented, magiging parehong-pareho ang ilang images sa train at test (leakage), at titingkad nang peke ang accuracy
-- [ ] Sa Roboflow, **huwag mag-turn on ng Augmentation** sa export
-- [ ] Palitan ang filenames gamit ang source prefix (`bisu_001.jpg`, `brinjal_001.jpg`) para walang magkapareho
-- [ ] I-delete ang malabo, mali ang label, at maliit na crops (mas maliit sa mga 50x50 pixels)
-- [ ] Mag-decide: cropped (Isolate Objects) o full images? Ang rekomendasyon ay **halo**, para pareho sa totoong photos ng farmer
-- [ ] Tanggalin ang **duplicates** (magkaparehong picture sa magkaibang datasets). Pwedeng gumamit ng hash check
+- [x] Kopyahin ang tamang images sa bawat folder (hindi ang buong dataset, ang mga class lang na kailangan): ginawa ng `ml/scripts/rebuild_dataset.py` (hindi na dumaan sa `raw_sorted/`)
+- [x] **Gamitin ang original images lang, hindi ang augmented versions.** Kung isasama ang augmented, magiging parehong-pareho ang ilang images sa train at test (leakage), at titingkad nang peke ang accuracy: Original folders lang ang ginamit sa Mendeley; ang mga flip/rotate na kopya ay hinuli ng near-duplicate check
+- [ ] Sa Roboflow, **huwag mag-turn on ng Augmentation** sa export: hindi applicable, walang Roboflow dataset na ginamit
+- [ ] Palitan ang filenames gamit ang source prefix (`bisu_001.jpg`, `brinjal_001.jpg`) para walang magkapareho: hindi ginawa. Pinanatili ang orihinal na pangalan; ang pinagmulan ng bawat file ay nasa `ml/results/dataset_rebuild_manifest.csv`
+- [x] I-delete ang malabo, mali ang label, at maliit na crops (mas maliit sa mga 50x50 pixels): inalis ang 67 sakit (hindi pest), 37 stock photo at mga label conflict; walang maliit na crop (pinakamaliit na gilid ay 285px). Hindi ko sinuri kung malabo
+- [ ] Mag-decide: cropped (Isolate Objects) o full images? Ang rekomendasyon ay **halo**, para pareho sa totoong photos ng farmer: full images lang ang laman ng dataset
+- [x] Tanggalin ang **duplicates** (magkaparehong picture sa magkaibang datasets). Pwedeng gumamit ng hash check: exact hash at near-duplicate (kasama ang flip/rotate)
 
 ### 1C. Kung kulang pa ang images
 - [ ] Kumuha ng sarili mong photos sa mga eggplant farm (Central Luzon), 100-300 bawat kulang na class
@@ -126,14 +126,14 @@ Flexible ang tagal. Beginner ka, kaya okay lang kung humaba. Huwag lumipat sa su
 - [ ] Iba-ibang anggulo, layo, liwanag, at phone
 
 ### 1D. I-split
-- [ ] I-split bawat class: **200 train / 50 valid / 50 test** (random, may fixed seed)
-- [ ] **Mag-split bago mag-augment.** Walang augmentation na ginawa sa disk
-- [ ] Siguraduhing **pantay ang bilang bawat class** at **pareho ang folder names** sa train, valid, at test
-- [ ] Isulat ang `ml/scripts/check_dataset.py` na nagbibilang ng images bawat folder at nagche-check ng:
-  - [ ] pare-pareho ang class folders sa tatlong splits
-  - [ ] walang file na hindi mabuksan
-  - [ ] walang parehong file hash sa train at test (anti-leakage)
-- [ ] I-run ang check at i-save ang output
+- [x] I-split bawat class: **200 train / 50 valid / 50 test** (random, may fixed seed): block split ng magkakasunod na kuha, seed 42
+- [x] **Mag-split bago mag-augment.** Walang augmentation na ginawa sa disk
+- [x] Siguraduhing **pantay ang bilang bawat class** at **pareho ang folder names** sa train, valid, at test
+- [x] Isulat ang `ml/scripts/check_dataset.py` na nagbibilang ng images bawat folder at nagche-check ng:
+  - [x] pare-pareho ang class folders sa tatlong splits
+  - [x] walang file na hindi mabuksan
+  - [x] walang parehong file hash sa train at test (anti-leakage); dinagdagan din ng near-duplicate check at babala para sa magkakalapit na kuha
+- [x] I-run ang check at i-save ang output: PASS, nasa `ml/results/check_dataset.txt`
 
 **Definition of Done:** Pasado ang `check_dataset.py` (200/50/50 bawat class, walang duplicate sa pagitan ng splits) at kumpleto ang `DATA_SOURCES.md`.
 
@@ -303,8 +303,8 @@ Panimulang rekomendasyon: subukan ang **A** sa 4C. Kung pumalya ang conversion, 
 ## Progress Tracker
 
 - [x] Sprint 0: Setup
-- [ ] Sprint 1: Dataset (nagsimula na: dina-download ang Mendeley datasets sa `C:\eggplant-data\raw`, labas ng OneDrive; `check_dataset.py` naisulat na pero hindi pa na-test)
-- [ ] Sprint 2: Baseline Training
+- [ ] Sprint 1: Dataset (halos tapos: pasado ang `check_dataset.py` na 200/50/50 at walang leakage. Natitira: punan mo ang mga source at license na hindi ko alam sa `ml/DATA_SOURCES.md`, at ipa-confirm sa agriculturist ang mga label. Tingnan ang `PHASE1_SUMMARY.md`)
+- [ ] Sprint 2: Baseline Training (naisulat na ang `common.py`, `train.py`, `evaluate.py`, `predict.py`; hindi pa na-run o na-test)
 - [ ] Sprint 3: Fine-tuning at Comparison
 - [ ] Sprint 4: Real-World Testing at Finalize
 - [ ] Sprint 5: Next.js + Integration
