@@ -164,19 +164,19 @@ Flexible ang tagal. Beginner ka, kaya okay lang kung humaba. Huwag lumipat sa su
 
 **Goal:** Unang gumaganang model na may test accuracy.
 
-- [ ] Isulat ang `ml/scripts/train.py`:
-  - [ ] I-load ang train/valid/test gamit ang `image_dataset_from_directory` (224x224, batch 32)
-  - [ ] Data augmentation layer (flip, rotation, zoom, contrast)
-  - [ ] MobileNetV2 (ImageNet weights, `include_top=False`) na naka-**freeze**
-  - [ ] Bagong top layer: GlobalAveragePooling2D, Dropout, Dense(5, softmax)
-  - [ ] Compile: Adam, sparse categorical crossentropy
-  - [ ] Callbacks: EarlyStopping at ReduceLROnPlateau
-  - [ ] I-save ang best model sa `ml/models/`
-  - [ ] I-save ang `class_names.json`
-- [ ] I-train ng ~15 epochs
-- [ ] I-plot ang training/validation accuracy at loss, i-save sa `ml/results/`
-- [ ] Isulat ang `evaluate.py`: test accuracy sa test set
-- [ ] Isulat sa notes ang unang resulta (hal. "Baseline MobileNetV2: __% test accuracy")
+- [x] Isulat ang `ml/scripts/train.py`:
+  - [x] I-load ang train/valid/test gamit ang `image_dataset_from_directory` (224x224, batch 32)
+  - [x] Data augmentation layer (flip, rotation, zoom, contrast)
+  - [x] MobileNetV2 (ImageNet weights, `include_top=False`) na naka-**freeze**
+  - [x] Bagong top layer: GlobalAveragePooling2D, Dropout, Dense(5, softmax)
+  - [x] Compile: Adam, sparse categorical crossentropy
+  - [x] Callbacks: EarlyStopping at ReduceLROnPlateau
+  - [x] I-save ang best model sa `ml/models/`
+  - [x] I-save ang `class_names.json`
+- [x] I-train ng ~15 epochs
+- [x] I-plot ang training/validation accuracy at loss, i-save sa `ml/results/`
+- [x] Isulat ang `evaluate.py`: test accuracy sa test set
+- [x] Isulat sa notes ang unang resulta: **Baseline MobileNetV2: 80.8% test accuracy** (macro F1 0.808; pinakamababang recall: flea_beetle 66%)
 
 **Definition of Done:** May naka-save na model at naka-record ang baseline test accuracy.
 
@@ -186,20 +186,24 @@ Flexible ang tagal. Beginner ka, kaya okay lang kung humaba. Huwag lumipat sa su
 
 **Goal:** Mapataas ang accuracy at mapili ang pinakamahusay na model.
 
-- [ ] **Fine-tuning:** i-unfreeze ang huling ~30 layers (BatchNorm layers ay naka-freeze pa rin), learning rate `1e-5`, 10 pang epochs
-- [ ] Gawin ang confusion matrix (numpy sa `evaluate.py`, hindi `sklearn.metrics`: na-block ng Application Control policy ng Windows ang DLL nito) at i-save bilang larawan
-- [ ] Gawin ang classification report (precision, recall, F1 bawat class)
-- [ ] Alamin kung aling mga pest ang nagkakapalitan (hal. thrips vs aphids)
-- [ ] Kung may mahinang class: dagdagan o linisin ang images ng class na iyon (balik sa Sprint 1 kung kailangan)
-- [ ] **Ulitin ang buong training gamit ang EfficientNetB0**
-- [ ] Gumawa ng comparison table:
+- [x] **Fine-tuning:** i-unfreeze ang huling ~30 layers (BatchNorm layers ay naka-freeze pa rin), learning rate `1e-5`, 10 pang epochs
+- [x] Gawin ang confusion matrix (numpy sa `evaluate.py`, hindi `sklearn.metrics`: na-block ng Application Control policy ng Windows ang DLL nito) at i-save bilang larawan
+- [x] Gawin ang classification report (precision, recall, F1 bawat class)
+- [x] Alamin kung aling mga pest ang nagkakapalitan: **aphids at flea_beetle** (sa lahat ng apat na model; sa EfficientNetB0 finetuned: flea_beetle → aphids 15, aphids → flea_beetle 9)
+- [ ] Kung may mahinang class: dagdagan o linisin ang images ng class na iyon (balik sa Sprint 1 kung kailangan). Mahina: flea_beetle (recall 70%). Hindi kita sa data ang source shortcut; posibleng label noise o mababang resolution, kaya ipa-review sa agriculturist at subukan ang mas malaking input
+- [x] **Ulitin ang buong training gamit ang EfficientNetB0**
+- [x] Gumawa ng comparison table (test set, 250 images; nasa `ml/results/comparison.md`):
 
-| Model | Test accuracy | Macro F1 | Laki ng model (MB) | Bilis (ms/image) |
-|---|---|---|---|---|
-| MobileNetV2 | | | | |
-| EfficientNetB0 | | | | |
+| Model | Test accuracy | Macro F1 | Laki ng model (MB) | Bilis (ms/image, CPU) | Pinakamababang recall |
+|---|---|---|---|---|---|
+| MobileNetV2 baseline | 80.8% | 0.808 | 9.3 | 67.9 | 66% (flea_beetle) |
+| MobileNetV2 finetuned | 82.4% | 0.824 | 20.8 | 71.1 | 64% (aphids) |
+| EfficientNetB0 baseline | 83.6% | 0.837 | 16.3 | 76.3 | 68% (flea_beetle) |
+| EfficientNetB0 finetuned | **86.0%** | **0.860** | 27.7 | 95.7 | 70% (flea_beetle) |
 
-- [ ] Pumili ng model para sa app (isaalang-alang ang accuracy **at** laki/bilis)
+Tandaan: ang laki ay kasama ang optimizer state, at ang bilis ay sa Python/TensorFlow CPU, hindi sa browser. Sa 250 images, ~±4% ang error margin ng bawat accuracy.
+
+- [ ] Pumili ng model para sa app (isaalang-alang ang accuracy **at** laki/bilis). Kandidato: EfficientNetB0 finetuned (ang tanging pumasa sa 85%), pero hindi pa final dahil sa flea_beetle recall
 
 **Mga target:**
 - Test accuracy **≥ 85%**
@@ -304,8 +308,8 @@ Panimulang rekomendasyon: subukan ang **A** sa 4C. Kung pumalya ang conversion, 
 
 - [x] Sprint 0: Setup
 - [ ] Sprint 1: Dataset (halos tapos: pasado ang `check_dataset.py` na 200/50/50 at walang leakage. Natitira: punan mo ang mga source at license na hindi ko alam sa `ml/DATA_SOURCES.md`, at ipa-confirm sa agriculturist ang mga label. Tingnan ang `PHASE1_SUMMARY.md`)
-- [ ] Sprint 2: Baseline Training (naisulat na ang `common.py`, `train.py`, `evaluate.py`, `predict.py`; na-smoke test na ang tatlong script (1 epoch, gumagana; nagkakatugma ang preprocessing ng `predict.py` at `evaluate.py`). Natitira: totoong training at evaluation)
-- [ ] Sprint 3: Fine-tuning at Comparison
+- [x] Sprint 2: Baseline Training (baseline MobileNetV2: 80.8% test accuracy; nagkakatugma ang preprocessing ng `predict.py` at `evaluate.py`)
+- [ ] Sprint 3: Fine-tuning at Comparison (halos tapos: EfficientNetB0 finetuned ang pinakamahusay sa 86.0%, pero flea_beetle recall ay 70% (target ≥ 80%). Natitira: ayusin ang flea_beetle at pumili ng final na model)
 - [ ] Sprint 4: Real-World Testing at Finalize
 - [ ] Sprint 5: Next.js + Integration
 - [ ] Sprint 6: Pest at Pesticide Database
