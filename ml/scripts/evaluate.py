@@ -13,7 +13,9 @@ Usage:
 import argparse
 import csv
 import json
+import re
 import time
+from collections import defaultdict
 from pathlib import Path
 
 import matplotlib
@@ -108,12 +110,24 @@ def plot_confusion(cm, class_names, out_path, title):
     plt.close(fig)
 
 
-def evaluate(model_path: Path, speed_images: int):
+def source_name(path) -> str:
+    """Pinagmulan ng larawan ayon sa pangalan ng file: camera (timestamp) o ang file series (hal. 'Insect Pest')."""
+    stem = Path(path).stem
+    if re.search(r"20\d{6}_?\d{6}", stem):
+        return "camera"
+    m = re.match(r"^(.*?)[\s_]*\(?\d+\)?(?:\s*\(\d+\))?$", stem)
+    return (m.group(1).strip() if m and m.group(1).strip() else stem)[:24]
+
+
+def evaluate(model_path: Path, speed_images: int, dataset_dir: Path = None):
     name = model_path.stem
     model = common.load_trained_model(model_path)
     class_names = common.load_class_names()
+    common.check_class_count(model, class_names)
+    if dataset_dir:
+        common.DATASET_DIR = dataset_dir
 
-    test_ds = common.load_split("test")
+    test_ds = common.load_split("test", img_size=common.model_img_size(model))
     assert test_ds.class_names == class_names, "Iba ang class order ng test set kaysa sa class_names.json"
 
     probs = model.predict(test_ds, verbose=0)
@@ -138,6 +152,14 @@ def evaluate(model_path: Path, speed_images: int):
     ]
     confusions.sort(key=lambda t: -t[2])
 
+    # accuracy bawat (totoong class, source): para makita kung ang model ay natututo ng pest o ng source ng larawan
+    groups = defaultdict(lambda: [0, 0])
+    for p, t, pr in zip(test_ds.file_paths, y_true, y_pred):
+        g = groups[(class_names[t], source_name(p))]
+        g[0] += 1
+        g[1] += int(t == pr)
+    by_source = {f"{c} | {s}": {"n": n, "correct": k} for (c, s), (n, k) in sorted(groups.items())}
+
     lines = [
         f"Model: {model_path}",
         f"Test images: {len(y_true)}",
@@ -152,6 +174,10 @@ def evaluate(model_path: Path, speed_images: int):
         "",
         "Mga nagkakapalitan (totoo -> hinula, bilang):",
         *([f"  {a} -> {b}: {n}" for a, b, n in confusions[:8]] or ["  wala"]),
+        "",
+        "Tama bawat class at source (totoong class | source):",
+        *[f"  {c:<18}{s:<26}{v['correct']:>3}/{v['n']:<3} {v['correct'] / v['n'] * 100:5.1f}%"
+          for c, s, v in ((k.split(' | ')[0], k.split(' | ')[1], v) for k, v in by_source.items())],
     ]
     text = "\n".join(lines)
     print(text)
@@ -162,7 +188,7 @@ def evaluate(model_path: Path, speed_images: int):
     (common.RESULTS_DIR / f"{name}_metrics.json").write_text(
         json.dumps(
             {"model": name, "test_accuracy": acc, "macro_f1": macro_f1, "size_mb": size_mb,
-             "ms_per_image": ms, "recall": recalls, "weak_classes": weak},
+             "ms_per_image": ms, "recall": recalls, "weak_classes": weak, "by_source": by_source},
             indent=2,
         ),
         encoding="utf-8",
@@ -205,11 +231,12 @@ def main():
     ap.add_argument("--model-path", type=Path)
     ap.add_argument("--compare", nargs="+", metavar="NAME", help="mga pangalan ng model file (walang .keras) na ikukumpara")
     ap.add_argument("--speed-images", type=int, default=50)
+    ap.add_argument("--dataset-dir", type=Path, default=None, help="folder na may test split (default: ml/data/dataset)")
     args = ap.parse_args()
     if args.compare:
         compare(args.compare)
     elif args.model_path:
-        evaluate(args.model_path, args.speed_images)
+        evaluate(args.model_path, args.speed_images, args.dataset_dir)
     else:
         ap.error("Kailangan ng --model-path o --compare")
 

@@ -10,7 +10,7 @@ Mga mode:
      Naglalabas ng accuracy, confidence ng tama vs mali, at threshold sweep (Sprint 4B).
      Naka-save ang detalye sa ml/results/<folder>_predictions.csv
 
-Kapag mas mababa ang top confidence kaysa --threshold (default 0.60),
+Kapag mas mababa ang top confidence kaysa --threshold (default 0.70, napili sa Sprint 4B),
 sinasabing "Hindi sigurado, paki-retake ang photo".
 """
 import argparse
@@ -18,28 +18,30 @@ import csv
 from pathlib import Path
 
 import numpy as np
+from PIL import Image
 
 import common
-from common import tf
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 
-def load_image(path: Path) -> np.ndarray:
-    """RGB, 224x224, raw 0-255 (nasa loob ng model ang preprocessing).
+def load_image(path: Path, size: int = common.IMG_SIZE) -> np.ndarray:
+    """RGB, size x size, raw 0-255 (nasa loob ng model ang preprocessing).
 
-    Parehong decode at resize ng image_dataset_from_directory (ginamit sa training at evaluate.py),
-    kasi nag-iiba ang hula kapag PIL ang nag-resize.
+    Parehong resize ng balance_dataset.py (PIL LANCZOS, stretch sa square), na gumawa ng 224x224 na dataset.
+    Kapag tf.image.resize (bilinear, walang antialias) ang ginamit sa malaking phone photo, iba ang itsura
+    nito kaysa sa training images, kaya nag-iiba ang hula.
     """
-    img = tf.io.decode_image(tf.io.read_file(str(path)), channels=3, expand_animations=False)
-    return tf.image.resize(img, (common.IMG_SIZE, common.IMG_SIZE)).numpy().astype(np.float32)
+    with Image.open(path) as im:
+        return np.asarray(im.convert("RGB").resize((size, size), Image.Resampling.LANCZOS), dtype=np.float32)
 
 
 def predict_paths(model, paths, class_names, batch_size=32):
+    size = common.model_img_size(model)
     results = []
     for i in range(0, len(paths), batch_size):
         chunk = paths[i : i + batch_size]
-        batch = np.stack([load_image(p) for p in chunk])
+        batch = np.stack([load_image(p, size) for p in chunk])
         probs = model.predict(batch, verbose=0)
         for p, pr in zip(chunk, probs):
             order = np.argsort(pr)[::-1]
@@ -104,13 +106,14 @@ def main():
     ap.add_argument("--image", type=Path)
     ap.add_argument("--folder", type=Path)
     ap.add_argument("--labeled", action="store_true", help="subfolder = class name; kukwentahin ang accuracy")
-    ap.add_argument("--threshold", type=float, default=0.60)
+    ap.add_argument("--threshold", type=float, default=0.70)
     args = ap.parse_args()
     if not args.image and not args.folder:
         ap.error("Kailangan ng --image o --folder")
 
     model = common.load_trained_model(args.model)
     class_names = common.load_class_names()
+    common.check_class_count(model, class_names)
 
     paths = [args.image] if args.image else gather_images(args.folder)
     if not paths:

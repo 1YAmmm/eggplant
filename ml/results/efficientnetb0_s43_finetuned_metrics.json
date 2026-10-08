@@ -1,0 +1,18 @@
+{
+  "model": "efficientnetb0_s43_finetuned",
+  "test_accuracy": 0.816,
+  "macro_f1": 0.8168349262706499,
+  "size_mb": 27.66077709197998,
+  "ms_per_image": 73.27597000003152,
+  "recall": {
+    "aphids": 0.68,
+    "flea_beetle": 0.66,
+    "fruit_shoot_borer": 0.92,
+    "healthy": 0.86,
+    "thrips": 0.96
+  },
+  "weak_classes": [
+    "aphids",
+    "flea_beetle"
+  ]
+}

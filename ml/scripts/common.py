@@ -20,12 +20,12 @@ SEED = 42
 MODEL_NAMES = ("mobilenetv2", "efficientnetb0")
 
 
-def load_split(split: str, batch_size: int = BATCH_SIZE, shuffle: bool = False):
+def load_split(split: str, batch_size: int = BATCH_SIZE, shuffle: bool = False, img_size: int = IMG_SIZE):
     """I-load ang isang split (train/valid/test). Raw 0-255 ang pixels; nasa loob ng model ang preprocessing."""
     ds = keras.utils.image_dataset_from_directory(
         DATASET_DIR / split,
         label_mode="int",
-        image_size=(IMG_SIZE, IMG_SIZE),
+        image_size=(img_size, img_size),
         batch_size=batch_size,
         shuffle=shuffle,
         seed=SEED,
@@ -42,19 +42,27 @@ def load_class_names():
     return json.loads(CLASS_NAMES_PATH.read_text(encoding="utf-8"))
 
 
-def build_model(name: str, num_classes: int, dropout: float = 0.3):
-    """Transfer-learning model. Tumatanggap ng RAW 0-255 RGB images (224x224x3),
+def check_class_count(model: keras.Model, class_names):
+    """Hihinto kapag hindi tugma ang output ng model sa class_names.json (hal. lumang 5-class model, 6 na ang classes)."""
+    n = int(model.output_shape[-1])
+    if n != len(class_names):
+        raise SystemExit(f"{n} classes ang model pero {len(class_names)} ang nasa {CLASS_NAMES_PATH.name} "
+                         f"({class_names}). Ibang dataset ang ginamit sa model na ito.")
+
+
+def build_model(name: str, num_classes: int, dropout: float = 0.3, img_size: int = IMG_SIZE):
+    """Transfer-learning model. Tumatanggap ng RAW 0-255 RGB images (img_size x img_size x 3),
     kaya hindi na kailangan ng preprocessing sa labas (predict.py, website).
     """
-    inputs = keras.Input(shape=(IMG_SIZE, IMG_SIZE, 3), name="image")
+    inputs = keras.Input(shape=(img_size, img_size, 3), name="image")
     if name == "mobilenetv2":
         base = keras.applications.MobileNetV2(
-            include_top=False, weights="imagenet", input_shape=(IMG_SIZE, IMG_SIZE, 3)
+            include_top=False, weights="imagenet", input_shape=(img_size, img_size, 3)
         )
         x = keras.layers.Rescaling(1.0 / 127.5, offset=-1.0, name="preprocess")(inputs)  # [-1, 1]
     elif name == "efficientnetb0":
         base = keras.applications.EfficientNetB0(
-            include_top=False, weights="imagenet", input_shape=(IMG_SIZE, IMG_SIZE, 3)
+            include_top=False, weights="imagenet", input_shape=(img_size, img_size, 3)
         )
         x = inputs  # may sariling rescaling/normalization sa loob ang EfficientNetB0 (0-255)
     else:
@@ -78,3 +86,8 @@ def get_base(model: keras.Model) -> keras.Model:
 
 def load_trained_model(path):
     return keras.models.load_model(path)
+
+
+def model_img_size(model: keras.Model) -> int:
+    """Laki ng input (pixels) ng model; para magamit ng evaluate.py at predict.py ang tamang resize."""
+    return int(model.input_shape[1])

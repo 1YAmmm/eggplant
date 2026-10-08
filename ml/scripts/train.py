@@ -14,10 +14,16 @@ Usage:
   python ml/scripts/train.py --model mobilenetv2                  (stage 1 at stage 2)
   python ml/scripts/train.py --model mobilenetv2 --fine-tune-epochs 0   (baseline lang)
   python ml/scripts/train.py --model efficientnetb0
+  python ml/scripts/train.py --model efficientnetb0 --img-size 320 --tag _320   (efficientnetb0_320_*.keras)
+  python ml/scripts/train.py --model efficientnetb0 --dataset-dir ml/data/dataset_plus_flea --tag _fleaplus
+  python ml/scripts/train.py --model efficientnetb0 --seed 43 --tag _s43       (ibang seed, para sukatin ang ingay)
+
+Ang <model> sa mga pangalan ng output ay --model + --tag, para hindi ma-overwrite ang ibang run.
 """
 import argparse
 import json
 import time
+from pathlib import Path
 
 import matplotlib
 
@@ -119,14 +125,22 @@ def main():
     ap.add_argument("--fine-tune-lr", type=float, default=1e-5)
     ap.add_argument("--dropout", type=float, default=0.3)
     ap.add_argument("--batch-size", type=int, default=common.BATCH_SIZE)
+    ap.add_argument("--img-size", type=int, default=common.IMG_SIZE, help="laki ng input sa pixels (square)")
+    ap.add_argument("--tag", default="", help="idinadagdag sa pangalan ng output, hal. _320")
+    ap.add_argument("--dataset-dir", type=Path, default=common.DATASET_DIR,
+                    help="folder na may train/valid (default: ml/data/dataset). Ang evaluate.py ay laging sa default na test set")
+    ap.add_argument("--seed", type=int, default=common.SEED)
     args = ap.parse_args()
+    name = f"{args.model}{args.tag}"
+    common.DATASET_DIR = args.dataset_dir
+    common.SEED = args.seed
 
     keras.utils.set_random_seed(common.SEED)
     common.MODELS_DIR.mkdir(parents=True, exist_ok=True)
     common.RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    raw_train = common.load_split("train", args.batch_size, shuffle=True)
-    raw_valid = common.load_split("valid", args.batch_size)
+    raw_train = common.load_split("train", args.batch_size, shuffle=True, img_size=args.img_size)
+    raw_valid = common.load_split("valid", args.batch_size, img_size=args.img_size)
     class_names = raw_train.class_names
     assert class_names == raw_valid.class_names, "Hindi magkapareho ang class order ng train at valid"
     common.save_class_names(class_names)
@@ -136,11 +150,11 @@ def main():
     print("Class weights:", weights)
     train_ds, valid_ds = prepare(raw_train, raw_valid)
 
-    model = common.build_model(args.model, len(class_names), args.dropout)
+    model = common.build_model(args.model, len(class_names), args.dropout, args.img_size)
     model.summary(line_length=100)
 
     # ---- Stage 1: baseline (naka-freeze ang base)
-    baseline_path = common.MODELS_DIR / f"{args.model}_baseline.keras"
+    baseline_path = common.MODELS_DIR / f"{name}_baseline.keras"
     compile_model(model, args.lr)
     t0 = time.time()
     h1 = model.fit(
@@ -156,7 +170,7 @@ def main():
 
     # ---- Stage 2: fine-tuning
     if args.fine_tune_epochs > 0:
-        finetuned_path = common.MODELS_DIR / f"{args.model}_finetuned.keras"
+        finetuned_path = common.MODELS_DIR / f"{name}_finetuned.keras"
         unfreeze_top_layers(model, args.fine_tune_layers)
         compile_model(model, args.fine_tune_lr)  # kailangang i-compile ulit pagkatapos baguhin ang trainable
         t0 = time.time()
@@ -169,17 +183,17 @@ def main():
             history[k] += list(map(float, h2.history[k]))
         model.save(finetuned_path)
 
-    (common.RESULTS_DIR / f"{args.model}_history.json").write_text(
+    (common.RESULTS_DIR / f"{name}_history.json").write_text(
         json.dumps({"stage1_epochs": stage1_epochs, **history}, indent=2), encoding="utf-8"
     )
     plot_history(
         history,
         stage1_epochs if args.fine_tune_epochs > 0 else None,
-        common.RESULTS_DIR / f"{args.model}_history.png",
-        args.model,
+        common.RESULTS_DIR / f"{name}_history.png",
+        name,
     )
     print(f"Final train acc {history['accuracy'][-1]:.3f} | val acc {history['val_accuracy'][-1]:.3f}")
-    print("Susunod: python ml/scripts/evaluate.py --model-path ml/models/" + f"{args.model}_baseline.keras")
+    print("Susunod: python ml/scripts/evaluate.py --model-path ml/models/" + f"{name}_baseline.keras")
 
 
 if __name__ == "__main__":

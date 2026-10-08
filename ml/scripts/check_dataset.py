@@ -1,7 +1,7 @@
 """Sprint 1D: sanity checks for ml/data/dataset.
 
 Checks:
-  1. pareho ang class folders sa train / valid / test (at tugma sa 5 expected classes)
+  1. pareho ang class folders sa train / valid / test (at tugma sa 6 expected classes)
   2. tama ang bilang bawat class bawat split (default 200 / 50 / 50)
   3. mabubuksan ang lahat ng image file
   4. walang parehong file hash sa pagitan ng mga split (anti-leakage)
@@ -32,7 +32,7 @@ ML_DIR = Path(__file__).resolve().parents[1]
 DEFAULT_DATASET = ML_DIR / "data" / "dataset"
 DEFAULT_REPORT = ML_DIR / "results" / "check_dataset.txt"
 
-CLASSES = ["aphids", "flea_beetle", "fruit_shoot_borer", "healthy", "thrips"]
+CLASSES = ["aphids", "flea_beetle", "fruit_shoot_borer", "healthy", "healthy_leaf", "thrips"]
 SPLITS = ["train", "valid", "test"]
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
@@ -84,6 +84,8 @@ def main():
     ap.add_argument("--dataset", type=Path, default=DEFAULT_DATASET)
     ap.add_argument("--expected", type=int, nargs=3, metavar=("TRAIN", "VALID", "TEST"), default=[200, 50, 50])
     ap.add_argument("--report", type=Path, default=DEFAULT_REPORT)
+    ap.add_argument("--allow-uneven", action="store_true",
+                    help="hindi kailangang pantay ang bilang; kailangan lang na may laman ang bawat class sa bawat split")
     args = ap.parse_args()
     expected = dict(zip(SPLITS, args.expected))
 
@@ -144,10 +146,14 @@ def main():
     for split in SPLITS:
         for cls in CLASSES:
             got = counts[split].get(cls, 0)
-            if got != expected[split]:
+            if args.allow_uneven:
+                if got == 0:
+                    rep.fail(f"{split}/{cls}: walang image")
+            elif got != expected[split]:
                 rep.fail(f"{split}/{cls}: {got} images (expected {expected[split]})")
     if rep.problems == problems_before:
-        rep.ok("pantay at tama ang bilang bawat class sa bawat split")
+        rep.ok("may laman ang bawat class sa bawat split (hindi kailangang pantay: --allow-uneven)" if args.allow_uneven
+               else "pantay at tama ang bilang bawat class sa bawat split")
     if corrupt:
         for c in corrupt:
             rep.fail(f"hindi mabuksan: {c}")

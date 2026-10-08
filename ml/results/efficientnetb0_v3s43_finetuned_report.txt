@@ -1,0 +1,46 @@
+Model: ml\models\efficientnetb0_v3s43_finetuned.keras
+Test images: 280
+Test accuracy: 88.21%  (target >= 85%: OK)
+Macro F1: 0.875
+Laki ng model: 27.7 MB
+Bilis: 89.9 ms/image (CPU, batch 1)
+
+                    precision    recall  f1-score   support
+
+             aphids     0.808     0.840     0.824        50
+        flea_beetle     0.822     0.740     0.779        50
+  fruit_shoot_borer     0.958     0.920     0.939        50
+            healthy     0.961     0.925     0.943        80
+             thrips     0.828     0.960     0.889        50
+
+           accuracy                         0.882       280
+          macro avg     0.875     0.877     0.875       280
+       weighted avg     0.885     0.882     0.882       280
+
+Recall bawat class (target >= 80%):
+  aphids                84.0%  OK
+  flea_beetle           74.0%  MABABA
+  fruit_shoot_borer     92.0%  OK
+  healthy               92.5%  OK
+  thrips                96.0%  OK
+
+Mga nagkakapalitan (totoo -> hinula, bilang):
+  flea_beetle -> aphids: 10
+  aphids -> flea_beetle: 8
+  healthy -> thrips: 6
+  fruit_shoot_borer -> thrips: 4
+  flea_beetle -> healthy: 3
+  thrips -> fruit_shoot_borer: 2
+
+Tama bawat class at source (totoong class | source):
+  aphids            Aphids_original            18/20   90.0%
+  aphids            Flea Beetles_original      22/22  100.0%
+  aphids            Insect Pest                 1/2    50.0%
+  aphids            NEW_URBAN_ORIG              1/6    16.7%
+  flea_beetle       EGGPLANT_ANGAT_ORIG         5/8    62.5%
+  flea_beetle       Flea Beetles_original       4/10   40.0%
+  flea_beetle       Insect Pest                28/32   87.5%
+  fruit_shoot_borer camera                     46/50   92.0%
+  healthy           Healthy Leaf               30/30  100.0%
+  healthy           camera                     44/50   88.0%
+  thrips            camera                     48/50   96.0%

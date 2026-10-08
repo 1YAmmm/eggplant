@@ -1,251 +1,301 @@
-file,true,predicted,confidence,aphids,flea_beetle,fruit_shoot_borer,healthy,thrips
-ml\data\dataset\test\aphids\Aphids_original0001.jpg,aphids,flea_beetle,0.8357,0.1541,0.8357,0.0046,0.0042,0.0014
-ml\data\dataset\test\aphids\Aphids_original0002.jpg,aphids,flea_beetle,0.8260,0.1676,0.8260,0.0013,0.0045,0.0006
-ml\data\dataset\test\aphids\Aphids_original0003.jpg,aphids,flea_beetle,0.9257,0.0628,0.9257,0.0086,0.0021,0.0008
-ml\data\dataset\test\aphids\Aphids_original0004.jpg,aphids,flea_beetle,0.7403,0.2487,0.7403,0.0018,0.0048,0.0044
-ml\data\dataset\test\aphids\Aphids_original0005.jpg,aphids,flea_beetle,0.8912,0.0974,0.8912,0.0049,0.0038,0.0027
-ml\data\dataset\test\aphids\Aphids_original0006.jpg,aphids,flea_beetle,0.9006,0.0821,0.9006,0.0132,0.0016,0.0025
-ml\data\dataset\test\aphids\Aphids_original0007.jpg,aphids,flea_beetle,0.7647,0.2215,0.7647,0.0050,0.0058,0.0030
-ml\data\dataset\test\aphids\Aphids_original0008.jpg,aphids,flea_beetle,0.8559,0.1329,0.8559,0.0040,0.0051,0.0022
-ml\data\dataset\test\aphids\Aphids_original0009.jpg,aphids,flea_beetle,0.7658,0.2280,0.7658,0.0013,0.0029,0.0020
-ml\data\dataset\test\aphids\Aphids_original0010.jpg,aphids,flea_beetle,0.7636,0.2102,0.7636,0.0111,0.0108,0.0044
-ml\data\dataset\test\aphids\Aphids_original0021.jpg,aphids,flea_beetle,0.8688,0.1221,0.8688,0.0018,0.0057,0.0017
-ml\data\dataset\test\aphids\Aphids_original0022.jpg,aphids,flea_beetle,0.7852,0.2058,0.7852,0.0021,0.0046,0.0022
-ml\data\dataset\test\aphids\Aphids_original0023.jpg,aphids,flea_beetle,0.7835,0.2019,0.7835,0.0060,0.0066,0.0020
-ml\data\dataset\test\aphids\Aphids_original0024.jpg,aphids,flea_beetle,0.6259,0.3246,0.6259,0.0032,0.0276,0.0187
-ml\data\dataset\test\aphids\Aphids_original0025.jpg,aphids,flea_beetle,0.6784,0.2858,0.6784,0.0037,0.0235,0.0087
-ml\data\dataset\test\aphids\Aphids_original0026.jpg,aphids,flea_beetle,0.7515,0.2287,0.7515,0.0016,0.0133,0.0048
-ml\data\dataset\test\aphids\Aphids_original0027.jpg,aphids,flea_beetle,0.6844,0.2903,0.6844,0.0025,0.0168,0.0060
-ml\data\dataset\test\aphids\Aphids_original0028.jpg,aphids,flea_beetle,0.7581,0.2179,0.7581,0.0091,0.0113,0.0036
-ml\data\dataset\test\aphids\Aphids_original0029.jpg,aphids,flea_beetle,0.8571,0.1356,0.8571,0.0037,0.0017,0.0018
-ml\data\dataset\test\aphids\Aphids_original0030.jpg,aphids,flea_beetle,0.7939,0.1878,0.7939,0.0074,0.0069,0.0041
-ml\data\dataset\test\aphids\Aphids_original0051.jpg,aphids,flea_beetle,0.7874,0.1848,0.7874,0.0111,0.0094,0.0073
-ml\data\dataset\test\aphids\Aphids_original0052.jpg,aphids,aphids,0.4372,0.4372,0.3923,0.1066,0.0288,0.0352
-ml\data\dataset\test\aphids\Aphids_original0053.jpg,aphids,flea_beetle,0.4704,0.4317,0.4704,0.0634,0.0143,0.0201
-ml\data\dataset\test\aphids\Aphids_original0054.jpg,aphids,flea_beetle,0.6437,0.3061,0.6437,0.0096,0.0255,0.0150
-ml\data\dataset\test\aphids\Aphids_original0055.jpg,aphids,flea_beetle,0.7224,0.2617,0.7224,0.0037,0.0094,0.0028
-ml\data\dataset\test\aphids\Aphids_original0056.jpg,aphids,flea_beetle,0.6726,0.3026,0.6726,0.0061,0.0145,0.0043
-ml\data\dataset\test\aphids\Aphids_original0059.jpg,aphids,flea_beetle,0.7053,0.2772,0.7053,0.0048,0.0080,0.0047
-ml\data\dataset\test\aphids\Aphids_original0060.jpg,aphids,flea_beetle,0.7213,0.2623,0.7213,0.0066,0.0086,0.0012
-ml\data\dataset\test\aphids\Aphids_original0061.jpg,aphids,aphids,0.5293,0.5293,0.4518,0.0101,0.0044,0.0044
-ml\data\dataset\test\aphids\Aphids_original0062.jpg,aphids,aphids,0.5135,0.5135,0.4749,0.0024,0.0052,0.0040
-ml\data\dataset\test\aphids\Aphids_original0135.jpg,aphids,flea_beetle,0.6633,0.3236,0.6633,0.0019,0.0077,0.0035
-ml\data\dataset\test\aphids\Aphids_original0136.jpg,aphids,flea_beetle,0.5348,0.4308,0.5348,0.0157,0.0052,0.0134
-ml\data\dataset\test\aphids\Aphids_original0137.jpg,aphids,flea_beetle,0.5205,0.4269,0.5205,0.0325,0.0088,0.0112
-ml\data\dataset\test\aphids\Aphids_original0138.jpg,aphids,flea_beetle,0.9322,0.0416,0.9322,0.0117,0.0085,0.0060
-ml\data\dataset\test\aphids\Aphids_original0139.jpg,aphids,flea_beetle,0.8938,0.0954,0.8938,0.0036,0.0044,0.0028
-ml\data\dataset\test\aphids\Aphids_original0140.jpg,aphids,flea_beetle,0.7904,0.1987,0.7904,0.0044,0.0049,0.0016
-ml\data\dataset\test\aphids\Aphids_original0142.jpg,aphids,flea_beetle,0.7449,0.2373,0.7449,0.0015,0.0135,0.0029
-ml\data\dataset\test\aphids\Aphids_original0143.jpg,aphids,flea_beetle,0.7611,0.2307,0.7611,0.0034,0.0035,0.0013
-ml\data\dataset\test\aphids\Aphids_original0144.jpg,aphids,flea_beetle,0.6838,0.3067,0.6838,0.0009,0.0067,0.0019
-ml\data\dataset\test\aphids\Aphids_original0146.jpg,aphids,flea_beetle,0.7124,0.2684,0.7124,0.0020,0.0092,0.0081
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (52).jpg,aphids,flea_beetle,0.7391,0.2257,0.7391,0.0136,0.0153,0.0063
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (53).jpg,aphids,flea_beetle,0.8040,0.1887,0.8040,0.0008,0.0049,0.0016
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (54).jpg,aphids,flea_beetle,0.8507,0.1318,0.8507,0.0110,0.0048,0.0017
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (58).jpg,aphids,flea_beetle,0.7301,0.2455,0.7301,0.0012,0.0213,0.0020
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (68).jpg,aphids,flea_beetle,0.5465,0.4471,0.5465,0.0012,0.0043,0.0009
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (69).jpg,aphids,flea_beetle,0.8154,0.1637,0.8154,0.0159,0.0029,0.0020
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (70).jpg,aphids,flea_beetle,0.7079,0.2426,0.7079,0.0190,0.0192,0.0113
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (72).jpg,aphids,flea_beetle,0.7785,0.1898,0.7785,0.0037,0.0191,0.0089
-ml\data\dataset\test\aphids\NEW_URBAN_ORIG (73).jpg,aphids,flea_beetle,0.7785,0.1545,0.7785,0.0204,0.0270,0.0197
-ml\data\dataset\test\aphids\tomato_MP (128).jpg,aphids,fruit_shoot_borer,0.2591,0.2442,0.1485,0.2591,0.2042,0.1440
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (192).jpg,flea_beetle,flea_beetle,0.6198,0.3674,0.6198,0.0047,0.0070,0.0010
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (194).jpg,flea_beetle,flea_beetle,0.6353,0.2526,0.6353,0.0844,0.0198,0.0079
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (359).jpg,flea_beetle,flea_beetle,0.6815,0.2339,0.6815,0.0107,0.0613,0.0126
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (360).jpg,flea_beetle,flea_beetle,0.8180,0.1440,0.8180,0.0270,0.0088,0.0021
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (361).jpg,flea_beetle,flea_beetle,0.6062,0.3111,0.6062,0.0449,0.0317,0.0061
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (362).jpg,flea_beetle,flea_beetle,0.8638,0.1063,0.8638,0.0169,0.0072,0.0058
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (363) (1).jpg,flea_beetle,flea_beetle,0.8501,0.0878,0.8501,0.0490,0.0104,0.0028
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (368).jpg,flea_beetle,flea_beetle,0.6469,0.3223,0.6469,0.0097,0.0108,0.0103
-ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (374).jpg,flea_beetle,flea_beetle,0.5447,0.3815,0.5447,0.0085,0.0622,0.0031
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0025.jpg,flea_beetle,flea_beetle,0.7584,0.2291,0.7584,0.0022,0.0046,0.0056
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0026.jpg,flea_beetle,flea_beetle,0.8615,0.1350,0.8615,0.0013,0.0016,0.0005
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0027.jpg,flea_beetle,flea_beetle,0.8127,0.1657,0.8127,0.0100,0.0100,0.0016
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0028.jpg,flea_beetle,flea_beetle,0.5971,0.3862,0.5971,0.0084,0.0058,0.0025
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0029.jpg,flea_beetle,flea_beetle,0.8034,0.1860,0.8034,0.0052,0.0033,0.0020
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0031.jpg,flea_beetle,flea_beetle,0.9196,0.0769,0.9196,0.0008,0.0022,0.0004
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0032.jpg,flea_beetle,flea_beetle,0.8973,0.0705,0.8973,0.0174,0.0118,0.0030
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0033.jpg,flea_beetle,flea_beetle,0.8243,0.1725,0.8243,0.0013,0.0014,0.0005
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0034.jpg,flea_beetle,flea_beetle,0.8913,0.0999,0.8913,0.0042,0.0040,0.0007
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0035.jpg,flea_beetle,flea_beetle,0.9421,0.0498,0.9421,0.0036,0.0032,0.0013
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0209.jpg,flea_beetle,flea_beetle,0.7832,0.1980,0.7832,0.0059,0.0085,0.0043
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0212.jpg,flea_beetle,flea_beetle,0.6272,0.3613,0.6272,0.0013,0.0082,0.0021
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0214.jpg,flea_beetle,flea_beetle,0.6782,0.3165,0.6782,0.0011,0.0031,0.0011
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0217.jpg,flea_beetle,flea_beetle,0.7010,0.2922,0.7010,0.0019,0.0026,0.0023
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0218.jpg,flea_beetle,flea_beetle,0.6595,0.3316,0.6595,0.0045,0.0022,0.0022
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0219.jpg,flea_beetle,flea_beetle,0.7361,0.2544,0.7361,0.0010,0.0033,0.0053
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0220.jpg,flea_beetle,flea_beetle,0.7567,0.2360,0.7567,0.0006,0.0037,0.0031
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0223.jpg,flea_beetle,aphids,0.5149,0.5149,0.4759,0.0014,0.0058,0.0020
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0225.jpg,flea_beetle,flea_beetle,0.8686,0.1185,0.8686,0.0051,0.0056,0.0022
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0226.jpg,flea_beetle,flea_beetle,0.8202,0.1709,0.8202,0.0033,0.0051,0.0004
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0253.jpg,flea_beetle,flea_beetle,0.8311,0.1616,0.8311,0.0035,0.0021,0.0018
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0254.jpg,flea_beetle,flea_beetle,0.7310,0.2517,0.7310,0.0019,0.0087,0.0067
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0259.jpg,flea_beetle,flea_beetle,0.8584,0.1380,0.8584,0.0010,0.0014,0.0011
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0261.jpg,flea_beetle,flea_beetle,0.7238,0.2702,0.7238,0.0013,0.0038,0.0009
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0262.jpg,flea_beetle,flea_beetle,0.7929,0.2004,0.7929,0.0018,0.0033,0.0017
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0266.jpg,flea_beetle,flea_beetle,0.7782,0.2174,0.7782,0.0008,0.0026,0.0009
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0268.jpg,flea_beetle,flea_beetle,0.5884,0.4075,0.5884,0.0009,0.0025,0.0006
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0271.jpg,flea_beetle,flea_beetle,0.6409,0.3489,0.6409,0.0014,0.0082,0.0005
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0272.jpg,flea_beetle,flea_beetle,0.6729,0.3120,0.6729,0.0051,0.0086,0.0014
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0273.jpg,flea_beetle,flea_beetle,0.7570,0.2312,0.7570,0.0049,0.0046,0.0023
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0275.jpg,flea_beetle,flea_beetle,0.6951,0.2513,0.6951,0.0139,0.0320,0.0077
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0276.jpg,flea_beetle,flea_beetle,0.7163,0.2577,0.7163,0.0118,0.0118,0.0024
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0277.jpg,flea_beetle,flea_beetle,0.7404,0.2512,0.7404,0.0041,0.0026,0.0017
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0280.jpg,flea_beetle,flea_beetle,0.5627,0.3348,0.5627,0.0913,0.0087,0.0025
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0281.jpg,flea_beetle,flea_beetle,0.6179,0.3600,0.6179,0.0179,0.0032,0.0009
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0282.jpg,flea_beetle,flea_beetle,0.7547,0.2417,0.7547,0.0007,0.0022,0.0006
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0284.jpg,flea_beetle,flea_beetle,0.7279,0.2563,0.7279,0.0045,0.0076,0.0039
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0286.jpg,flea_beetle,flea_beetle,0.8245,0.1680,0.8245,0.0013,0.0028,0.0034
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0287.jpg,flea_beetle,flea_beetle,0.7706,0.2219,0.7706,0.0009,0.0038,0.0028
-ml\data\dataset\test\flea_beetle\Flea Beetles_original0288.jpg,flea_beetle,flea_beetle,0.8436,0.1477,0.8436,0.0020,0.0042,0.0025
-ml\data\dataset\test\flea_beetle\NEW_KNL_ORIG (18).jpg,flea_beetle,flea_beetle,0.6080,0.3690,0.6080,0.0111,0.0091,0.0029
-ml\data\dataset\test\fruit_shoot_borer\20230220_125658.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8798,0.0050,0.0064,0.8798,0.0017,0.1071
-ml\data\dataset\test\fruit_shoot_borer\20230220_125702.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8413,0.0038,0.0113,0.8413,0.0151,0.1285
-ml\data\dataset\test\fruit_shoot_borer\20230220_125745.jpg,fruit_shoot_borer,thrips,0.8327,0.0009,0.0073,0.1452,0.0138,0.8327
-ml\data\dataset\test\fruit_shoot_borer\20230220_125754.jpg,fruit_shoot_borer,thrips,0.5022,0.0023,0.0031,0.4502,0.0421,0.5022
-ml\data\dataset\test\fruit_shoot_borer\20230220_125755.jpg,fruit_shoot_borer,fruit_shoot_borer,0.5209,0.0051,0.0061,0.5209,0.0292,0.4388
-ml\data\dataset\test\fruit_shoot_borer\20230220_130348.jpg,fruit_shoot_borer,fruit_shoot_borer,0.7734,0.0013,0.0163,0.7734,0.0034,0.2057
-ml\data\dataset\test\fruit_shoot_borer\20230220_130349.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9175,0.0048,0.0233,0.9175,0.0029,0.0515
-ml\data\dataset\test\fruit_shoot_borer\20230220_130354.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8840,0.0027,0.0025,0.8840,0.0235,0.0873
-ml\data\dataset\test\fruit_shoot_borer\20230220_130433.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9566,0.0052,0.0006,0.9566,0.0011,0.0364
-ml\data\dataset\test\fruit_shoot_borer\20230220_130436.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9262,0.0017,0.0032,0.9262,0.0079,0.0610
-ml\data\dataset\test\fruit_shoot_borer\20230220_130447.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9825,0.0015,0.0014,0.9825,0.0013,0.0133
-ml\data\dataset\test\fruit_shoot_borer\20230220_130450.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9841,0.0027,0.0031,0.9841,0.0002,0.0099
-ml\data\dataset\test\fruit_shoot_borer\20230220_130749.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8626,0.0036,0.0023,0.8626,0.0149,0.1166
-ml\data\dataset\test\fruit_shoot_borer\20230220_130801.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9207,0.0013,0.0010,0.9207,0.0170,0.0600
-ml\data\dataset\test\fruit_shoot_borer\20230220_130805.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8765,0.0011,0.0003,0.8765,0.0009,0.1213
-ml\data\dataset\test\fruit_shoot_borer\20230220_130808.jpg,fruit_shoot_borer,fruit_shoot_borer,0.5199,0.0054,0.0094,0.5199,0.0472,0.4180
-ml\data\dataset\test\fruit_shoot_borer\20230220_130819.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9560,0.0008,0.0013,0.9560,0.0007,0.0412
-ml\data\dataset\test\fruit_shoot_borer\20230220_130956.jpg,fruit_shoot_borer,flea_beetle,0.4143,0.0464,0.4143,0.2549,0.1398,0.1446
-ml\data\dataset\test\fruit_shoot_borer\20230310_145942.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8906,0.0005,0.0043,0.8906,0.0099,0.0946
-ml\data\dataset\test\fruit_shoot_borer\20230310_150100.jpg,fruit_shoot_borer,thrips,0.7644,0.0004,0.0004,0.2246,0.0103,0.7644
-ml\data\dataset\test\fruit_shoot_borer\20230310_150207.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9685,0.0031,0.0037,0.9685,0.0096,0.0151
-ml\data\dataset\test\fruit_shoot_borer\20230310_150224.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9098,0.0011,0.0004,0.9098,0.0158,0.0729
-ml\data\dataset\test\fruit_shoot_borer\20230310_150405.jpg,fruit_shoot_borer,fruit_shoot_borer,0.5949,0.0011,0.0014,0.5949,0.0130,0.3896
-ml\data\dataset\test\fruit_shoot_borer\20230310_155010.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9089,0.0028,0.0015,0.9089,0.0135,0.0733
-ml\data\dataset\test\fruit_shoot_borer\20230310_155022.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8963,0.0014,0.0048,0.8963,0.0232,0.0743
-ml\data\dataset\test\fruit_shoot_borer\20230310_155025.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8913,0.0134,0.0147,0.8913,0.0593,0.0213
-ml\data\dataset\test\fruit_shoot_borer\20230310_155029.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9398,0.0025,0.0029,0.9398,0.0345,0.0203
-ml\data\dataset\test\fruit_shoot_borer\20230310_155120.jpg,fruit_shoot_borer,fruit_shoot_borer,0.6353,0.0013,0.0010,0.6353,0.0142,0.3482
-ml\data\dataset\test\fruit_shoot_borer\20230310_155124.jpg,fruit_shoot_borer,thrips,0.6221,0.0053,0.0094,0.3392,0.0240,0.6221
-ml\data\dataset\test\fruit_shoot_borer\20230310_155231.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9322,0.0016,0.0002,0.9322,0.0032,0.0628
-ml\data\dataset\test\fruit_shoot_borer\20230310_155407.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8656,0.0108,0.0350,0.8656,0.0474,0.0412
-ml\data\dataset\test\fruit_shoot_borer\20230310_155429.jpg,fruit_shoot_borer,fruit_shoot_borer,0.7195,0.0102,0.0064,0.7195,0.0347,0.2292
-ml\data\dataset\test\fruit_shoot_borer\IMG20230220131107.jpg,fruit_shoot_borer,thrips,0.7633,0.0006,0.0026,0.2328,0.0008,0.7633
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125521.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9953,0.0004,0.0002,0.9953,0.0005,0.0037
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125533.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9638,0.0047,0.0034,0.9638,0.0022,0.0259
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125545.jpg,fruit_shoot_borer,fruit_shoot_borer,0.7887,0.0002,0.0013,0.7887,0.0038,0.2060
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125559.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9179,0.0002,0.0008,0.9179,0.0026,0.0785
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125726.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8828,0.0026,0.0022,0.8828,0.0499,0.0625
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130443.jpg,fruit_shoot_borer,healthy,0.5044,0.0153,0.0239,0.2019,0.5044,0.2545
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130450.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9097,0.0031,0.0002,0.9097,0.0490,0.0380
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130453.jpg,fruit_shoot_borer,thrips,0.8153,0.0027,0.0048,0.0977,0.0796,0.8153
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130756.jpg,fruit_shoot_borer,fruit_shoot_borer,0.4994,0.0028,0.0072,0.4994,0.0187,0.4719
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_131017.jpg,fruit_shoot_borer,thrips,0.5094,0.0284,0.0083,0.3503,0.1036,0.5094
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_131020.jpg,fruit_shoot_borer,thrips,0.8036,0.0435,0.0253,0.0621,0.0654,0.8036
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133912.jpg,fruit_shoot_borer,thrips,0.4570,0.0126,0.0202,0.3946,0.1155,0.4570
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133922.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9858,0.0021,0.0006,0.9858,0.0069,0.0047
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133957.jpg,fruit_shoot_borer,thrips,0.5133,0.0105,0.0137,0.3058,0.1567,0.5133
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133959.jpg,fruit_shoot_borer,thrips,0.6147,0.0048,0.0042,0.0788,0.2975,0.6147
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_134055.jpg,fruit_shoot_borer,fruit_shoot_borer,0.7487,0.0010,0.0009,0.7487,0.0317,0.2177
-ml\data\dataset\test\fruit_shoot_borer\IMG_20230310_155038.jpg,fruit_shoot_borer,fruit_shoot_borer,0.7015,0.0045,0.0077,0.7015,0.0168,0.2696
-ml\data\dataset\test\healthy\20230217_122955.jpg,healthy,healthy,0.7694,0.0076,0.0055,0.0380,0.7694,0.1794
-ml\data\dataset\test\healthy\20230217_122957.jpg,healthy,healthy,0.7287,0.0114,0.0045,0.0474,0.7287,0.2081
-ml\data\dataset\test\healthy\20230217_122958.jpg,healthy,healthy,0.7642,0.0120,0.0032,0.0308,0.7642,0.1897
-ml\data\dataset\test\healthy\20230217_123000.jpg,healthy,healthy,0.7577,0.0194,0.0133,0.0279,0.7577,0.1817
-ml\data\dataset\test\healthy\20230217_123001.jpg,healthy,healthy,0.7798,0.0108,0.0106,0.0297,0.7798,0.1692
-ml\data\dataset\test\healthy\20230217_123003.jpg,healthy,healthy,0.5970,0.0140,0.0136,0.0398,0.5970,0.3356
-ml\data\dataset\test\healthy\20230217_123018.jpg,healthy,healthy,0.5311,0.0102,0.0133,0.1218,0.5311,0.3235
-ml\data\dataset\test\healthy\20230217_123019.jpg,healthy,healthy,0.7429,0.0100,0.0126,0.0367,0.7429,0.1978
-ml\data\dataset\test\healthy\20230217_123040.jpg,healthy,healthy,0.6024,0.0139,0.0082,0.0949,0.6024,0.2806
-ml\data\dataset\test\healthy\20230217_123042.jpg,healthy,healthy,0.7510,0.0078,0.0092,0.0669,0.7510,0.1652
-ml\data\dataset\test\healthy\20230217_123044.jpg,healthy,healthy,0.6551,0.0077,0.0049,0.0973,0.6551,0.2350
-ml\data\dataset\test\healthy\20230217_123113.jpg,healthy,healthy,0.8460,0.0056,0.0080,0.0369,0.8460,0.1034
-ml\data\dataset\test\healthy\20230217_123121.jpg,healthy,healthy,0.7279,0.0832,0.0521,0.1099,0.7279,0.0269
-ml\data\dataset\test\healthy\20230217_123355.jpg,healthy,healthy,0.7272,0.0049,0.0075,0.0318,0.7272,0.2285
-ml\data\dataset\test\healthy\20230217_123419.jpg,healthy,healthy,0.6951,0.0327,0.0116,0.1498,0.6951,0.1108
-ml\data\dataset\test\healthy\20230217_123422.jpg,healthy,healthy,0.4430,0.0227,0.0139,0.2188,0.4430,0.3016
-ml\data\dataset\test\healthy\20230217_123424.jpg,healthy,healthy,0.5412,0.0378,0.0434,0.1533,0.5412,0.2244
-ml\data\dataset\test\healthy\20230217_123425.jpg,healthy,healthy,0.6942,0.0222,0.0459,0.1106,0.6942,0.1271
-ml\data\dataset\test\healthy\20230217_123427.jpg,healthy,healthy,0.5242,0.0152,0.0094,0.2178,0.5242,0.2334
-ml\data\dataset\test\healthy\20230217_123431.jpg,healthy,healthy,0.5318,0.0123,0.0033,0.1189,0.5318,0.3337
-ml\data\dataset\test\healthy\20230220_085416.jpg,healthy,fruit_shoot_borer,0.5130,0.0032,0.0020,0.5130,0.2708,0.2111
-ml\data\dataset\test\healthy\20230220_085459.jpg,healthy,healthy,0.7662,0.0122,0.0404,0.0864,0.7662,0.0947
-ml\data\dataset\test\healthy\20230220_085518.jpg,healthy,healthy,0.6994,0.0174,0.0248,0.0740,0.6994,0.1844
-ml\data\dataset\test\healthy\20230220_085527.jpg,healthy,healthy,0.6224,0.0116,0.0136,0.0283,0.6224,0.3240
-ml\data\dataset\test\healthy\20230220_085529.jpg,healthy,healthy,0.7956,0.0087,0.0209,0.0140,0.7956,0.1608
-ml\data\dataset\test\healthy\20230220_085552.jpg,healthy,healthy,0.9504,0.0018,0.0030,0.0029,0.9504,0.0419
-ml\data\dataset\test\healthy\20230220_085554.jpg,healthy,healthy,0.9682,0.0007,0.0014,0.0039,0.9682,0.0258
-ml\data\dataset\test\healthy\20230220_085818.jpg,healthy,healthy,0.5647,0.0054,0.0141,0.2874,0.5647,0.1283
-ml\data\dataset\test\healthy\20230220_085825.jpg,healthy,healthy,0.5709,0.0137,0.0273,0.1548,0.5709,0.2335
-ml\data\dataset\test\healthy\20230220_085832.jpg,healthy,healthy,0.6313,0.0085,0.0157,0.2399,0.6313,0.1045
-ml\data\dataset\test\healthy\20230220_093832.jpg,healthy,healthy,0.7731,0.0038,0.0035,0.0477,0.7731,0.1719
-ml\data\dataset\test\healthy\20230220_093915.jpg,healthy,thrips,0.6801,0.0036,0.0017,0.0192,0.2953,0.6801
-ml\data\dataset\test\healthy\20230220_093917.jpg,healthy,healthy,0.8818,0.0008,0.0006,0.0117,0.8818,0.1052
-ml\data\dataset\test\healthy\20230220_093920.jpg,healthy,healthy,0.9151,0.0020,0.0017,0.0037,0.9151,0.0776
-ml\data\dataset\test\healthy\20230220_093938.jpg,healthy,healthy,0.5325,0.0339,0.0420,0.1450,0.5325,0.2466
-ml\data\dataset\test\healthy\20230220_093941.jpg,healthy,healthy,0.8692,0.0033,0.0093,0.0878,0.8692,0.0305
-ml\data\dataset\test\healthy\20230220_093945.jpg,healthy,healthy,0.8185,0.0147,0.0214,0.0457,0.8185,0.0996
-ml\data\dataset\test\healthy\20230220_094041.jpg,healthy,healthy,0.9201,0.0015,0.0025,0.0134,0.9201,0.0625
-ml\data\dataset\test\healthy\20230220_094111.jpg,healthy,thrips,0.5996,0.0116,0.0095,0.0244,0.3549,0.5996
-ml\data\dataset\test\healthy\20230220_094114.jpg,healthy,thrips,0.4962,0.0032,0.0022,0.0314,0.4670,0.4962
-ml\data\dataset\test\healthy\20230310_135255.jpg,healthy,healthy,0.8630,0.0051,0.0052,0.0379,0.8630,0.0888
-ml\data\dataset\test\healthy\20230310_135351.jpg,healthy,healthy,0.4973,0.0099,0.0640,0.3587,0.4973,0.0700
-ml\data\dataset\test\healthy\20230310_135418.jpg,healthy,thrips,0.7546,0.0081,0.0126,0.1029,0.1218,0.7546
-ml\data\dataset\test\healthy\20230310_135442.jpg,healthy,thrips,0.4936,0.0118,0.0299,0.1759,0.2889,0.4936
-ml\data\dataset\test\healthy\20230310_135449.jpg,healthy,healthy,0.4697,0.0088,0.0099,0.0928,0.4697,0.4188
-ml\data\dataset\test\healthy\20230310_135518.jpg,healthy,healthy,0.4806,0.0131,0.0217,0.4310,0.4806,0.0536
-ml\data\dataset\test\healthy\20230310_135523.jpg,healthy,healthy,0.5160,0.0032,0.0084,0.3680,0.5160,0.1044
-ml\data\dataset\test\healthy\20230310_135731.jpg,healthy,thrips,0.4401,0.0097,0.0267,0.1717,0.3519,0.4401
-ml\data\dataset\test\healthy\20230310_140104.jpg,healthy,healthy,0.5067,0.0113,0.0146,0.4243,0.5067,0.0432
-ml\data\dataset\test\healthy\20230310_140123.jpg,healthy,healthy,0.4884,0.0111,0.0080,0.3983,0.4884,0.0943
-ml\data\dataset\test\thrips\20230217_123623.jpg,thrips,thrips,0.6573,0.0059,0.0078,0.0616,0.2674,0.6573
-ml\data\dataset\test\thrips\20230217_123933.jpg,thrips,healthy,0.5068,0.0035,0.0044,0.0508,0.5068,0.4345
-ml\data\dataset\test\thrips\20230217_134825.jpg,thrips,thrips,0.8491,0.0054,0.0094,0.0739,0.0622,0.8491
-ml\data\dataset\test\thrips\20230217_134924.jpg,thrips,fruit_shoot_borer,0.9428,0.0039,0.0023,0.9428,0.0113,0.0397
-ml\data\dataset\test\thrips\20230220_091931.jpg,thrips,thrips,0.8035,0.0016,0.0065,0.0257,0.1627,0.8035
-ml\data\dataset\test\thrips\20230220_091933.jpg,thrips,thrips,0.5594,0.0026,0.0088,0.0257,0.4036,0.5594
-ml\data\dataset\test\thrips\20230220_092015.jpg,thrips,thrips,0.6578,0.0307,0.0227,0.0595,0.2294,0.6578
-ml\data\dataset\test\thrips\20230220_092127.jpg,thrips,thrips,0.7633,0.0106,0.0055,0.0750,0.1456,0.7633
-ml\data\dataset\test\thrips\20230220_092230.jpg,thrips,thrips,0.9512,0.0023,0.0165,0.0115,0.0185,0.9512
-ml\data\dataset\test\thrips\20230220_092302.jpg,thrips,thrips,0.8768,0.0096,0.0028,0.1060,0.0048,0.8768
-ml\data\dataset\test\thrips\20230220_103515.jpg,thrips,fruit_shoot_borer,0.5771,0.0091,0.0111,0.5771,0.0695,0.3333
-ml\data\dataset\test\thrips\20230220_103602.jpg,thrips,thrips,0.5562,0.0085,0.0439,0.1859,0.2055,0.5562
-ml\data\dataset\test\thrips\20230220_103746.jpg,thrips,thrips,0.9246,0.0054,0.0040,0.0252,0.0408,0.9246
-ml\data\dataset\test\thrips\20230220_104021.jpg,thrips,thrips,0.6367,0.0077,0.0170,0.2231,0.1155,0.6367
-ml\data\dataset\test\thrips\20230220_104451.jpg,thrips,thrips,0.7473,0.0016,0.0034,0.2101,0.0376,0.7473
-ml\data\dataset\test\thrips\20230220_104955.jpg,thrips,thrips,0.6371,0.0075,0.0091,0.1783,0.1680,0.6371
-ml\data\dataset\test\thrips\20230220_105147.jpg,thrips,thrips,0.8587,0.0045,0.0109,0.1218,0.0041,0.8587
-ml\data\dataset\test\thrips\20230220_105221.jpg,thrips,thrips,0.6948,0.0007,0.0022,0.2871,0.0153,0.6948
-ml\data\dataset\test\thrips\20230220_105312.jpg,thrips,thrips,0.8688,0.0006,0.0042,0.1038,0.0225,0.8688
-ml\data\dataset\test\thrips\IMG20230217123754.jpg,thrips,thrips,0.7856,0.0034,0.0035,0.1523,0.0552,0.7856
-ml\data\dataset\test\thrips\IMG20230217124127.jpg,thrips,thrips,0.9155,0.0027,0.0014,0.0510,0.0293,0.9155
-ml\data\dataset\test\thrips\IMG20230217124148.jpg,thrips,thrips,0.8118,0.0035,0.0074,0.0543,0.1231,0.8118
-ml\data\dataset\test\thrips\IMG20230217124213.jpg,thrips,thrips,0.9304,0.0078,0.0046,0.0347,0.0225,0.9304
-ml\data\dataset\test\thrips\IMG20230217124232.jpg,thrips,thrips,0.8127,0.0029,0.0079,0.0545,0.1220,0.8127
-ml\data\dataset\test\thrips\IMG20230217124333.jpg,thrips,thrips,0.8727,0.0047,0.0068,0.0490,0.0668,0.8727
-ml\data\dataset\test\thrips\IMG20230217124511.jpg,thrips,thrips,0.8971,0.0067,0.0037,0.0648,0.0276,0.8971
-ml\data\dataset\test\thrips\IMG20230217124514.jpg,thrips,thrips,0.9495,0.0024,0.0023,0.0198,0.0259,0.9495
-ml\data\dataset\test\thrips\IMG20230217133427.jpg,thrips,thrips,0.9599,0.0009,0.0036,0.0122,0.0234,0.9599
-ml\data\dataset\test\thrips\IMG20230217133458.jpg,thrips,thrips,0.8158,0.0055,0.0058,0.1379,0.0350,0.8158
-ml\data\dataset\test\thrips\IMG20230217134529.jpg,thrips,thrips,0.9275,0.0026,0.0011,0.0313,0.0375,0.9275
-ml\data\dataset\test\thrips\IMG20230217134917.jpg,thrips,thrips,0.9652,0.0061,0.0091,0.0086,0.0110,0.9652
-ml\data\dataset\test\thrips\IMG20230220092258.jpg,thrips,thrips,0.9523,0.0015,0.0012,0.0400,0.0050,0.9523
-ml\data\dataset\test\thrips\IMG20230220105035.jpg,thrips,thrips,0.7141,0.0035,0.0095,0.2471,0.0258,0.7141
-ml\data\dataset\test\thrips\IMG_20230217_133424.jpg,thrips,thrips,0.5966,0.0074,0.0192,0.3081,0.0687,0.5966
-ml\data\dataset\test\thrips\IMG_20230217_133527.jpg,thrips,thrips,0.7041,0.0007,0.0036,0.2672,0.0244,0.7041
-ml\data\dataset\test\thrips\IMG_20230217_133531.jpg,thrips,thrips,0.8858,0.0013,0.0075,0.0868,0.0186,0.8858
-ml\data\dataset\test\thrips\IMG_20230217_133534.jpg,thrips,thrips,0.6557,0.0073,0.0223,0.1837,0.1310,0.6557
-ml\data\dataset\test\thrips\IMG_20230217_133605.jpg,thrips,thrips,0.9732,0.0003,0.0013,0.0184,0.0069,0.9732
-ml\data\dataset\test\thrips\IMG_20230217_133631.jpg,thrips,thrips,0.6801,0.0198,0.0076,0.2474,0.0452,0.6801
-ml\data\dataset\test\thrips\IMG_20230217_133635.jpg,thrips,thrips,0.6734,0.0079,0.0071,0.1280,0.1836,0.6734
-ml\data\dataset\test\thrips\IMG_20230217_133641.jpg,thrips,thrips,0.7023,0.0288,0.0072,0.2256,0.0360,0.7023
-ml\data\dataset\test\thrips\IMG_20230217_134622.jpg,thrips,thrips,0.5844,0.0726,0.0302,0.3038,0.0090,0.5844
-ml\data\dataset\test\thrips\IMG_20230217_134625.jpg,thrips,thrips,0.9637,0.0018,0.0011,0.0317,0.0017,0.9637
-ml\data\dataset\test\thrips\IMG_20230217_134715.jpg,thrips,thrips,0.8978,0.0019,0.0052,0.0696,0.0256,0.8978
-ml\data\dataset\test\thrips\IMG_20230217_134729.jpg,thrips,thrips,0.8133,0.0011,0.0096,0.1634,0.0126,0.8133
-ml\data\dataset\test\thrips\IMG_20230217_134733.jpg,thrips,thrips,0.8981,0.0011,0.0071,0.0635,0.0302,0.8981
-ml\data\dataset\test\thrips\IMG_20230217_134850.jpg,thrips,thrips,0.6019,0.0074,0.0103,0.3554,0.0250,0.6019
-ml\data\dataset\test\thrips\IMG_20230220_091844.jpg,thrips,thrips,0.5937,0.0437,0.1897,0.0464,0.1264,0.5937
-ml\data\dataset\test\thrips\IMG_20230220_091900.jpg,thrips,thrips,0.9048,0.0070,0.0200,0.0513,0.0168,0.9048
-ml\data\dataset\test\thrips\IMG_20230220_092203.jpg,thrips,thrips,0.8602,0.0003,0.0015,0.1350,0.0029,0.8602
+file,true,predicted,confidence,aphids,flea_beetle,fruit_shoot_borer,healthy,healthy_leaf,thrips
+ml\data\dataset\test\aphids\Aphids_original0011.jpg,aphids,aphids,0.8614,0.8614,0.1089,0.0004,0.0001,0.0288,0.0003
+ml\data\dataset\test\aphids\Aphids_original0012.jpg,aphids,aphids,0.9054,0.9054,0.0664,0.0003,0.0002,0.0276,0.0001
+ml\data\dataset\test\aphids\Aphids_original0013.jpg,aphids,aphids,0.5460,0.5460,0.4138,0.0003,0.0000,0.0398,0.0001
+ml\data\dataset\test\aphids\Aphids_original0014.jpg,aphids,aphids,0.4453,0.4453,0.3837,0.0002,0.0000,0.1705,0.0002
+ml\data\dataset\test\aphids\Aphids_original0015.jpg,aphids,aphids,0.6454,0.6454,0.3299,0.0001,0.0000,0.0246,0.0000
+ml\data\dataset\test\aphids\Aphids_original0016.jpg,aphids,aphids,0.8422,0.8422,0.1443,0.0001,0.0000,0.0134,0.0000
+ml\data\dataset\test\aphids\Aphids_original0017.jpg,aphids,flea_beetle,0.5413,0.4217,0.5413,0.0001,0.0000,0.0368,0.0001
+ml\data\dataset\test\aphids\Aphids_original0018.jpg,aphids,flea_beetle,0.5028,0.4607,0.5028,0.0002,0.0000,0.0361,0.0001
+ml\data\dataset\test\aphids\Aphids_original0019.jpg,aphids,aphids,0.8240,0.8240,0.1343,0.0001,0.0000,0.0415,0.0001
+ml\data\dataset\test\aphids\Aphids_original0020.jpg,aphids,aphids,0.8805,0.8805,0.1026,0.0000,0.0000,0.0168,0.0000
+ml\data\dataset\test\aphids\Aphids_original0168.jpg,aphids,aphids,0.6884,0.6884,0.3110,0.0002,0.0002,0.0001,0.0000
+ml\data\dataset\test\aphids\Aphids_original0169.jpg,aphids,aphids,0.7131,0.7131,0.2857,0.0004,0.0002,0.0005,0.0001
+ml\data\dataset\test\aphids\Aphids_original0170.jpg,aphids,flea_beetle,0.5073,0.4913,0.5073,0.0004,0.0003,0.0006,0.0001
+ml\data\dataset\test\aphids\Aphids_original0171.jpg,aphids,aphids,0.7394,0.7394,0.2589,0.0002,0.0001,0.0012,0.0001
+ml\data\dataset\test\aphids\Aphids_original0172.jpg,aphids,aphids,0.5140,0.5140,0.4799,0.0000,0.0000,0.0061,0.0000
+ml\data\dataset\test\aphids\Aphids_original0173.jpg,aphids,aphids,0.5982,0.5982,0.4004,0.0000,0.0000,0.0013,0.0000
+ml\data\dataset\test\aphids\Aphids_original0174.jpg,aphids,aphids,0.5729,0.5729,0.4264,0.0000,0.0000,0.0006,0.0000
+ml\data\dataset\test\aphids\Aphids_original0175.jpg,aphids,aphids,0.6365,0.6365,0.3600,0.0001,0.0000,0.0035,0.0000
+ml\data\dataset\test\aphids\Aphids_original0176.jpg,aphids,flea_beetle,0.8670,0.0767,0.8670,0.0002,0.0000,0.0561,0.0000
+ml\data\dataset\test\aphids\Aphids_original0178.jpg,aphids,aphids,0.7040,0.7040,0.2560,0.0000,0.0000,0.0399,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0193.jpg,aphids,aphids,0.7464,0.7464,0.2528,0.0000,0.0001,0.0008,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0195.jpg,aphids,aphids,0.8016,0.8016,0.1976,0.0000,0.0000,0.0008,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0196.jpg,aphids,aphids,0.7484,0.7484,0.2509,0.0000,0.0000,0.0006,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0197.jpg,aphids,aphids,0.7600,0.7600,0.2390,0.0000,0.0000,0.0009,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0200.jpg,aphids,aphids,0.9732,0.9732,0.0258,0.0000,0.0000,0.0010,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0202.jpg,aphids,aphids,0.9010,0.9010,0.0961,0.0001,0.0001,0.0028,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0204.jpg,aphids,aphids,0.9068,0.9068,0.0843,0.0000,0.0000,0.0088,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0207.jpg,aphids,aphids,0.7764,0.7764,0.1767,0.0003,0.0001,0.0461,0.0004
+ml\data\dataset\test\aphids\Flea Beetles_original0209.jpg,aphids,aphids,0.8337,0.8337,0.1112,0.0001,0.0002,0.0545,0.0003
+ml\data\dataset\test\aphids\Flea Beetles_original0212.jpg,aphids,aphids,0.6704,0.6704,0.3166,0.0000,0.0000,0.0129,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0281.jpg,aphids,aphids,0.7248,0.7248,0.1829,0.0001,0.0001,0.0921,0.0001
+ml\data\dataset\test\aphids\Flea Beetles_original0284.jpg,aphids,aphids,0.5436,0.5436,0.2512,0.0000,0.0000,0.2052,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0288.jpg,aphids,aphids,0.9854,0.9854,0.0142,0.0000,0.0000,0.0004,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0289.jpg,aphids,aphids,0.9739,0.9739,0.0236,0.0001,0.0000,0.0023,0.0001
+ml\data\dataset\test\aphids\Flea Beetles_original0293.jpg,aphids,aphids,0.9956,0.9956,0.0042,0.0000,0.0000,0.0002,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0295.jpg,aphids,aphids,0.9220,0.9220,0.0778,0.0000,0.0000,0.0002,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0301.jpg,aphids,aphids,0.8545,0.8545,0.1448,0.0001,0.0000,0.0005,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0302.jpg,aphids,aphids,0.9541,0.9541,0.0449,0.0001,0.0000,0.0008,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0303.jpg,aphids,aphids,0.8482,0.8482,0.1515,0.0000,0.0000,0.0003,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0304.jpg,aphids,aphids,0.7814,0.7814,0.2164,0.0000,0.0000,0.0022,0.0000
+ml\data\dataset\test\aphids\Flea Beetles_original0351.jpg,aphids,aphids,0.8483,0.8483,0.1447,0.0001,0.0002,0.0066,0.0001
+ml\data\dataset\test\aphids\Flea Beetles_original0353.jpg,aphids,aphids,0.6539,0.6539,0.1972,0.0000,0.0001,0.1487,0.0001
+ml\data\dataset\test\aphids\Insect Pest (63).jpg,aphids,aphids,0.6689,0.6689,0.2576,0.0001,0.0002,0.0728,0.0003
+ml\data\dataset\test\aphids\Insect Pest (64).jpg,aphids,flea_beetle,0.4356,0.3950,0.4356,0.0001,0.0006,0.1680,0.0007
+ml\data\dataset\test\aphids\NEW_URBAN_ORIG (14).jpg,aphids,flea_beetle,0.7537,0.2330,0.7537,0.0003,0.0001,0.0128,0.0000
+ml\data\dataset\test\aphids\NEW_URBAN_ORIG (17).jpg,aphids,aphids,0.6182,0.6182,0.3509,0.0011,0.0141,0.0144,0.0014
+ml\data\dataset\test\aphids\NEW_URBAN_ORIG (18).jpg,aphids,flea_beetle,0.7803,0.2188,0.7803,0.0001,0.0002,0.0007,0.0000
+ml\data\dataset\test\aphids\NEW_URBAN_ORIG (2).jpg,aphids,flea_beetle,0.7273,0.2676,0.7273,0.0004,0.0001,0.0045,0.0001
+ml\data\dataset\test\aphids\NEW_URBAN_ORIG (24).jpg,aphids,flea_beetle,0.5957,0.4019,0.5957,0.0001,0.0005,0.0017,0.0001
+ml\data\dataset\test\aphids\NEW_URBAN_ORIG (35).jpg,aphids,flea_beetle,0.7492,0.1973,0.7492,0.0000,0.0002,0.0533,0.0000
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (110).jpg,flea_beetle,flea_beetle,0.8814,0.0778,0.8814,0.0046,0.0001,0.0357,0.0004
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (116).jpg,flea_beetle,flea_beetle,0.9040,0.0310,0.9040,0.0004,0.0004,0.0632,0.0009
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (150).jpg,flea_beetle,aphids,0.5686,0.5686,0.4291,0.0007,0.0000,0.0015,0.0000
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (159).jpg,flea_beetle,aphids,0.8010,0.8010,0.1917,0.0005,0.0003,0.0064,0.0001
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (193).jpg,flea_beetle,flea_beetle,0.9497,0.0204,0.9497,0.0001,0.0000,0.0299,0.0000
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (330).jpg,flea_beetle,flea_beetle,0.9219,0.0668,0.9219,0.0001,0.0000,0.0112,0.0000
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (333) (1).jpg,flea_beetle,aphids,0.8400,0.8400,0.1540,0.0029,0.0006,0.0020,0.0004
+ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (335).jpg,flea_beetle,aphids,0.6482,0.6482,0.3281,0.0009,0.0002,0.0224,0.0002
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0018.jpg,flea_beetle,healthy_leaf,0.4327,0.4162,0.1509,0.0000,0.0001,0.4327,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0019.jpg,flea_beetle,aphids,0.6239,0.6239,0.1577,0.0000,0.0001,0.2183,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0020.jpg,flea_beetle,aphids,0.7100,0.7100,0.1333,0.0000,0.0001,0.1566,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0097.jpg,flea_beetle,aphids,0.5352,0.5352,0.4616,0.0000,0.0000,0.0030,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0098.jpg,flea_beetle,flea_beetle,0.5192,0.4783,0.5192,0.0001,0.0000,0.0024,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0100.jpg,flea_beetle,flea_beetle,0.7193,0.2765,0.7193,0.0001,0.0000,0.0041,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0101.jpg,flea_beetle,flea_beetle,0.6372,0.3590,0.6372,0.0001,0.0000,0.0037,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0103.jpg,flea_beetle,flea_beetle,0.5184,0.4758,0.5184,0.0000,0.0000,0.0057,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0105.jpg,flea_beetle,flea_beetle,0.8380,0.1592,0.8380,0.0000,0.0000,0.0027,0.0000
+ml\data\dataset\test\flea_beetle\Flea Beetles_original0106.jpg,flea_beetle,flea_beetle,0.8244,0.1748,0.8244,0.0001,0.0000,0.0008,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (117).jpg,flea_beetle,flea_beetle,0.9588,0.0147,0.9588,0.0002,0.0002,0.0257,0.0005
+ml\data\dataset\test\flea_beetle\Insect Pest (118).jpg,flea_beetle,aphids,0.7061,0.7061,0.2866,0.0006,0.0002,0.0059,0.0006
+ml\data\dataset\test\flea_beetle\Insect Pest (127).jpg,flea_beetle,flea_beetle,0.9091,0.0872,0.9091,0.0012,0.0000,0.0026,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (128).jpg,flea_beetle,flea_beetle,0.7144,0.0603,0.7144,0.0153,0.0039,0.2025,0.0036
+ml\data\dataset\test\flea_beetle\Insect Pest (129).jpg,flea_beetle,flea_beetle,0.5200,0.0974,0.5200,0.0001,0.0002,0.3823,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (130).jpg,flea_beetle,flea_beetle,0.7282,0.0181,0.7282,0.0006,0.0001,0.2525,0.0004
+ml\data\dataset\test\flea_beetle\Insect Pest (131).jpg,flea_beetle,healthy_leaf,0.4626,0.2205,0.3156,0.0001,0.0003,0.4626,0.0009
+ml\data\dataset\test\flea_beetle\Insect Pest (132).jpg,flea_beetle,flea_beetle,0.5655,0.1925,0.5655,0.0004,0.0001,0.2411,0.0003
+ml\data\dataset\test\flea_beetle\Insect Pest (133).jpg,flea_beetle,flea_beetle,0.5265,0.4680,0.5265,0.0006,0.0002,0.0045,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (134).jpg,flea_beetle,flea_beetle,0.7116,0.1894,0.7116,0.0005,0.0002,0.0981,0.0003
+ml\data\dataset\test\flea_beetle\Insect Pest (135).jpg,flea_beetle,flea_beetle,0.5875,0.3889,0.5875,0.0036,0.0004,0.0194,0.0003
+ml\data\dataset\test\flea_beetle\Insect Pest (136).jpg,flea_beetle,flea_beetle,0.7621,0.1261,0.7621,0.0001,0.0000,0.1116,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (179).jpg,flea_beetle,flea_beetle,0.9903,0.0073,0.9903,0.0001,0.0000,0.0023,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (18).jpg,flea_beetle,flea_beetle,0.9686,0.0300,0.9686,0.0000,0.0000,0.0013,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (180).jpg,flea_beetle,flea_beetle,0.9973,0.0010,0.9973,0.0002,0.0000,0.0014,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (181).jpg,flea_beetle,flea_beetle,0.7835,0.0055,0.7835,0.0009,0.0036,0.2060,0.0005
+ml\data\dataset\test\flea_beetle\Insect Pest (182).jpg,flea_beetle,healthy_leaf,0.5544,0.0110,0.4343,0.0001,0.0000,0.5544,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (185).jpg,flea_beetle,healthy_leaf,0.7820,0.0143,0.2014,0.0012,0.0001,0.7820,0.0011
+ml\data\dataset\test\flea_beetle\Insect Pest (187).jpg,flea_beetle,healthy_leaf,0.5451,0.0213,0.4331,0.0000,0.0004,0.5451,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (188).jpg,flea_beetle,flea_beetle,0.8046,0.1879,0.8046,0.0001,0.0001,0.0073,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (189).jpg,flea_beetle,flea_beetle,0.9972,0.0025,0.9972,0.0001,0.0000,0.0002,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (19).jpg,flea_beetle,healthy_leaf,0.7757,0.0257,0.1980,0.0000,0.0003,0.7757,0.0002
+ml\data\dataset\test\flea_beetle\Insect Pest (190).jpg,flea_beetle,flea_beetle,0.9243,0.0677,0.9243,0.0000,0.0000,0.0080,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (191).jpg,flea_beetle,healthy_leaf,0.4779,0.1267,0.3950,0.0001,0.0001,0.4779,0.0002
+ml\data\dataset\test\flea_beetle\Insect Pest (20).jpg,flea_beetle,flea_beetle,0.8047,0.1777,0.8047,0.0001,0.0000,0.0175,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (21).jpg,flea_beetle,flea_beetle,0.8075,0.1608,0.8075,0.0000,0.0000,0.0317,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (24).jpg,flea_beetle,healthy_leaf,0.7231,0.0065,0.2703,0.0000,0.0000,0.7231,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (25).jpg,flea_beetle,healthy_leaf,0.6963,0.0767,0.2269,0.0000,0.0000,0.6963,0.0000
+ml\data\dataset\test\flea_beetle\Insect Pest (26).jpg,flea_beetle,healthy_leaf,0.7710,0.0232,0.2056,0.0000,0.0000,0.7710,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (27).jpg,flea_beetle,healthy_leaf,0.7993,0.0158,0.1847,0.0000,0.0001,0.7993,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (28).jpg,flea_beetle,flea_beetle,0.9764,0.0186,0.9764,0.0001,0.0001,0.0048,0.0001
+ml\data\dataset\test\flea_beetle\Insect Pest (29).jpg,flea_beetle,healthy_leaf,0.6312,0.0066,0.3617,0.0000,0.0002,0.6312,0.0003
+ml\data\dataset\test\fruit_shoot_borer\20230220_125658.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_125702.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9999,0.0000,0.0000,0.9999,0.0000,0.0000,0.0001
+ml\data\dataset\test\fruit_shoot_borer\20230220_125745.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9843,0.0000,0.0000,0.9843,0.0000,0.0000,0.0157
+ml\data\dataset\test\fruit_shoot_borer\20230220_125754.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9998,0.0000,0.0000,0.9998,0.0000,0.0000,0.0002
+ml\data\dataset\test\fruit_shoot_borer\20230220_125755.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9995,0.0000,0.0000,0.9995,0.0000,0.0000,0.0005
+ml\data\dataset\test\fruit_shoot_borer\20230220_130348.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_130349.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9992,0.0001,0.0000,0.9992,0.0000,0.0000,0.0006
+ml\data\dataset\test\fruit_shoot_borer\20230220_130354.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9581,0.0000,0.0000,0.9581,0.0001,0.0010,0.0408
+ml\data\dataset\test\fruit_shoot_borer\20230220_130433.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_130436.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9998,0.0000,0.0000,0.9998,0.0000,0.0000,0.0002
+ml\data\dataset\test\fruit_shoot_borer\20230220_130447.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9998,0.0000,0.0000,0.9998,0.0000,0.0000,0.0002
+ml\data\dataset\test\fruit_shoot_borer\20230220_130450.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_130749.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_130801.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_130805.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230220_130808.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9993,0.0000,0.0000,0.9993,0.0000,0.0000,0.0006
+ml\data\dataset\test\fruit_shoot_borer\20230220_130819.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9987,0.0000,0.0000,0.9987,0.0000,0.0000,0.0013
+ml\data\dataset\test\fruit_shoot_borer\20230220_130956.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8628,0.0012,0.0014,0.8628,0.0015,0.0018,0.1313
+ml\data\dataset\test\fruit_shoot_borer\20230310_145942.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9923,0.0000,0.0000,0.9923,0.0000,0.0000,0.0077
+ml\data\dataset\test\fruit_shoot_borer\20230310_150100.jpg,fruit_shoot_borer,thrips,0.6975,0.0002,0.0000,0.3023,0.0000,0.0000,0.6975
+ml\data\dataset\test\fruit_shoot_borer\20230310_150207.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230310_150224.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9991,0.0000,0.0000,0.9991,0.0000,0.0000,0.0009
+ml\data\dataset\test\fruit_shoot_borer\20230310_150405.jpg,fruit_shoot_borer,fruit_shoot_borer,0.7806,0.0000,0.0000,0.7806,0.0000,0.0000,0.2194
+ml\data\dataset\test\fruit_shoot_borer\20230310_155010.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9994,0.0000,0.0000,0.9994,0.0000,0.0000,0.0006
+ml\data\dataset\test\fruit_shoot_borer\20230310_155022.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9994,0.0000,0.0001,0.9994,0.0005,0.0000,0.0001
+ml\data\dataset\test\fruit_shoot_borer\20230310_155025.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9874,0.0001,0.0001,0.9874,0.0120,0.0000,0.0005
+ml\data\dataset\test\fruit_shoot_borer\20230310_155029.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9922,0.0002,0.0002,0.9922,0.0069,0.0000,0.0005
+ml\data\dataset\test\fruit_shoot_borer\20230310_155120.jpg,fruit_shoot_borer,fruit_shoot_borer,0.6681,0.0000,0.0000,0.6681,0.0000,0.0000,0.3319
+ml\data\dataset\test\fruit_shoot_borer\20230310_155124.jpg,fruit_shoot_borer,fruit_shoot_borer,0.5351,0.0002,0.0000,0.5351,0.0010,0.0000,0.4637
+ml\data\dataset\test\fruit_shoot_borer\20230310_155231.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\20230310_155407.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9726,0.0002,0.0008,0.9726,0.0030,0.0006,0.0228
+ml\data\dataset\test\fruit_shoot_borer\20230310_155429.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9983,0.0000,0.0000,0.9983,0.0002,0.0000,0.0016
+ml\data\dataset\test\fruit_shoot_borer\IMG20230220131107.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9652,0.0000,0.0000,0.9652,0.0000,0.0000,0.0348
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125521.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125533.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9993,0.0000,0.0000,0.9993,0.0000,0.0000,0.0007
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125545.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9999,0.0000,0.0000,0.9999,0.0000,0.0000,0.0001
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125559.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_125726.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9991,0.0000,0.0000,0.9991,0.0000,0.0000,0.0009
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130443.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9675,0.0000,0.0000,0.9675,0.0001,0.0000,0.0323
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130450.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130453.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9852,0.0000,0.0000,0.9852,0.0000,0.0000,0.0148
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130756.jpg,fruit_shoot_borer,fruit_shoot_borer,0.5839,0.0003,0.0003,0.5839,0.0001,0.0001,0.4153
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_131017.jpg,fruit_shoot_borer,thrips,0.8528,0.0000,0.0000,0.1471,0.0001,0.0000,0.8528
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_131020.jpg,fruit_shoot_borer,thrips,0.8428,0.0000,0.0000,0.1571,0.0001,0.0000,0.8428
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133912.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9949,0.0000,0.0000,0.9949,0.0000,0.0000,0.0051
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133922.jpg,fruit_shoot_borer,fruit_shoot_borer,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133957.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9265,0.0000,0.0000,0.9265,0.0234,0.0000,0.0500
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133959.jpg,fruit_shoot_borer,fruit_shoot_borer,0.8000,0.0002,0.0001,0.8000,0.1593,0.0000,0.0403
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_134055.jpg,fruit_shoot_borer,fruit_shoot_borer,0.9994,0.0000,0.0000,0.9994,0.0000,0.0000,0.0005
+ml\data\dataset\test\fruit_shoot_borer\IMG_20230310_155038.jpg,fruit_shoot_borer,thrips,0.8710,0.0000,0.0000,0.1288,0.0002,0.0000,0.8710
+ml\data\dataset\test\healthy\20230217_122955.jpg,healthy,healthy,0.9947,0.0003,0.0001,0.0004,0.9947,0.0000,0.0045
+ml\data\dataset\test\healthy\20230217_122957.jpg,healthy,healthy,0.9946,0.0003,0.0000,0.0003,0.9946,0.0000,0.0048
+ml\data\dataset\test\healthy\20230217_122958.jpg,healthy,healthy,0.9892,0.0004,0.0001,0.0007,0.9892,0.0000,0.0095
+ml\data\dataset\test\healthy\20230217_123000.jpg,healthy,healthy,0.9645,0.0025,0.0007,0.0047,0.9645,0.0004,0.0272
+ml\data\dataset\test\healthy\20230217_123001.jpg,healthy,healthy,0.9946,0.0001,0.0000,0.0003,0.9946,0.0000,0.0049
+ml\data\dataset\test\healthy\20230217_123003.jpg,healthy,healthy,0.9926,0.0002,0.0000,0.0003,0.9926,0.0000,0.0068
+ml\data\dataset\test\healthy\20230217_123018.jpg,healthy,healthy,0.9340,0.0002,0.0000,0.0225,0.9340,0.0000,0.0433
+ml\data\dataset\test\healthy\20230217_123019.jpg,healthy,healthy,0.9473,0.0004,0.0001,0.0133,0.9473,0.0000,0.0389
+ml\data\dataset\test\healthy\20230217_123040.jpg,healthy,healthy,0.9961,0.0001,0.0001,0.0010,0.9961,0.0000,0.0026
+ml\data\dataset\test\healthy\20230217_123042.jpg,healthy,healthy,0.9902,0.0004,0.0005,0.0012,0.9902,0.0000,0.0077
+ml\data\dataset\test\healthy\20230217_123044.jpg,healthy,healthy,0.9924,0.0001,0.0002,0.0019,0.9924,0.0000,0.0054
+ml\data\dataset\test\healthy\20230217_123113.jpg,healthy,healthy,0.8941,0.0014,0.0017,0.0045,0.8941,0.0039,0.0944
+ml\data\dataset\test\healthy\20230217_123121.jpg,healthy,healthy,0.9998,0.0000,0.0001,0.0000,0.9998,0.0000,0.0000
+ml\data\dataset\test\healthy\20230217_123355.jpg,healthy,healthy,0.9489,0.0007,0.0011,0.0119,0.9489,0.0000,0.0373
+ml\data\dataset\test\healthy\20230217_123419.jpg,healthy,healthy,0.9788,0.0002,0.0000,0.0007,0.9788,0.0000,0.0203
+ml\data\dataset\test\healthy\20230217_123422.jpg,healthy,healthy,0.9406,0.0012,0.0002,0.0019,0.9406,0.0001,0.0560
+ml\data\dataset\test\healthy\20230217_123424.jpg,healthy,healthy,0.9483,0.0005,0.0001,0.0015,0.9483,0.0000,0.0496
+ml\data\dataset\test\healthy\20230217_123425.jpg,healthy,healthy,0.9523,0.0005,0.0001,0.0016,0.9523,0.0000,0.0456
+ml\data\dataset\test\healthy\20230217_123427.jpg,healthy,healthy,0.9761,0.0004,0.0000,0.0009,0.9761,0.0000,0.0225
+ml\data\dataset\test\healthy\20230217_123431.jpg,healthy,healthy,0.7629,0.0006,0.0001,0.0208,0.7629,0.0000,0.2155
+ml\data\dataset\test\healthy\20230220_085416.jpg,healthy,healthy,0.9947,0.0002,0.0000,0.0016,0.9947,0.0000,0.0035
+ml\data\dataset\test\healthy\20230220_085459.jpg,healthy,healthy,0.9994,0.0000,0.0000,0.0000,0.9994,0.0000,0.0005
+ml\data\dataset\test\healthy\20230220_085518.jpg,healthy,healthy,0.9599,0.0006,0.0001,0.0085,0.9599,0.0000,0.0309
+ml\data\dataset\test\healthy\20230220_085527.jpg,healthy,healthy,0.9250,0.0013,0.0010,0.0013,0.9250,0.0020,0.0693
+ml\data\dataset\test\healthy\20230220_085529.jpg,healthy,healthy,0.9941,0.0005,0.0007,0.0001,0.9941,0.0003,0.0043
+ml\data\dataset\test\healthy\20230220_085552.jpg,healthy,healthy,0.9997,0.0000,0.0000,0.0000,0.9997,0.0000,0.0002
+ml\data\dataset\test\healthy\20230220_085554.jpg,healthy,healthy,0.9997,0.0000,0.0000,0.0000,0.9997,0.0000,0.0003
+ml\data\dataset\test\healthy\20230220_085818.jpg,healthy,healthy,0.9690,0.0001,0.0000,0.0020,0.9690,0.0000,0.0289
+ml\data\dataset\test\healthy\20230220_085825.jpg,healthy,healthy,0.5162,0.0008,0.0001,0.0078,0.5162,0.0001,0.4749
+ml\data\dataset\test\healthy\20230220_085832.jpg,healthy,healthy,0.9787,0.0000,0.0000,0.0016,0.9787,0.0000,0.0197
+ml\data\dataset\test\healthy\20230220_093832.jpg,healthy,healthy,0.9992,0.0000,0.0000,0.0001,0.9992,0.0000,0.0008
+ml\data\dataset\test\healthy\20230220_093915.jpg,healthy,healthy,0.9821,0.0000,0.0000,0.0003,0.9821,0.0000,0.0176
+ml\data\dataset\test\healthy\20230220_093917.jpg,healthy,healthy,0.9983,0.0000,0.0000,0.0000,0.9983,0.0000,0.0017
+ml\data\dataset\test\healthy\20230220_093920.jpg,healthy,healthy,0.9968,0.0000,0.0000,0.0000,0.9968,0.0000,0.0031
+ml\data\dataset\test\healthy\20230220_093938.jpg,healthy,healthy,0.8818,0.0020,0.0002,0.0028,0.8818,0.0007,0.1125
+ml\data\dataset\test\healthy\20230220_093941.jpg,healthy,healthy,0.8934,0.0032,0.0003,0.0031,0.8934,0.0017,0.0982
+ml\data\dataset\test\healthy\20230220_093945.jpg,healthy,healthy,0.9977,0.0002,0.0000,0.0002,0.9977,0.0000,0.0019
+ml\data\dataset\test\healthy\20230220_094041.jpg,healthy,healthy,0.9975,0.0000,0.0000,0.0000,0.9975,0.0000,0.0024
+ml\data\dataset\test\healthy\20230220_094111.jpg,healthy,thrips,0.9637,0.0000,0.0000,0.0011,0.0351,0.0000,0.9637
+ml\data\dataset\test\healthy\20230220_094114.jpg,healthy,healthy,0.7517,0.0002,0.0000,0.0015,0.7517,0.0000,0.2465
+ml\data\dataset\test\healthy\20230310_135255.jpg,healthy,healthy,0.9794,0.0012,0.0001,0.0021,0.9794,0.0001,0.0172
+ml\data\dataset\test\healthy\20230310_135351.jpg,healthy,healthy,0.8619,0.0067,0.0054,0.0384,0.8619,0.0070,0.0805
+ml\data\dataset\test\healthy\20230310_135418.jpg,healthy,thrips,0.5770,0.0000,0.0000,0.4103,0.0126,0.0001,0.5770
+ml\data\dataset\test\healthy\20230310_135442.jpg,healthy,healthy,0.6040,0.0059,0.0086,0.0989,0.6040,0.0009,0.2817
+ml\data\dataset\test\healthy\20230310_135449.jpg,healthy,healthy,0.9372,0.0015,0.0026,0.0065,0.9372,0.0003,0.0520
+ml\data\dataset\test\healthy\20230310_135518.jpg,healthy,healthy,0.8810,0.0044,0.0038,0.0681,0.8810,0.0003,0.0423
+ml\data\dataset\test\healthy\20230310_135523.jpg,healthy,healthy,0.6889,0.0021,0.0022,0.1802,0.6889,0.0007,0.1260
+ml\data\dataset\test\healthy\20230310_135731.jpg,healthy,thrips,0.9311,0.0011,0.0002,0.0136,0.0530,0.0010,0.9311
+ml\data\dataset\test\healthy\20230310_140104.jpg,healthy,healthy,0.7676,0.0003,0.0000,0.1812,0.7676,0.0000,0.0509
+ml\data\dataset\test\healthy\20230310_140123.jpg,healthy,healthy,0.6616,0.0002,0.0001,0.0797,0.6616,0.0002,0.2582
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (121).jpg,healthy_leaf,healthy_leaf,0.9284,0.0046,0.0666,0.0000,0.0000,0.9284,0.0004
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (122).jpg,healthy_leaf,healthy_leaf,0.9868,0.0008,0.0123,0.0000,0.0000,0.9868,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (123).jpg,healthy_leaf,healthy_leaf,0.9329,0.0099,0.0564,0.0002,0.0000,0.9329,0.0005
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (124).jpg,healthy_leaf,healthy_leaf,0.9036,0.0301,0.0653,0.0002,0.0001,0.9036,0.0007
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (125).jpg,healthy_leaf,healthy_leaf,0.9878,0.0005,0.0116,0.0000,0.0000,0.9878,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (126).jpg,healthy_leaf,healthy_leaf,0.9687,0.0073,0.0240,0.0000,0.0000,0.9687,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (127).jpg,healthy_leaf,healthy_leaf,0.9995,0.0001,0.0003,0.0000,0.0000,0.9995,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (128).jpg,healthy_leaf,healthy_leaf,0.9944,0.0029,0.0026,0.0000,0.0000,0.9944,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (129).jpg,healthy_leaf,healthy_leaf,0.9643,0.0083,0.0271,0.0001,0.0000,0.9643,0.0002
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (130).jpg,healthy_leaf,healthy_leaf,0.9932,0.0016,0.0050,0.0000,0.0000,0.9932,0.0002
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (131).jpg,healthy_leaf,healthy_leaf,0.9945,0.0030,0.0023,0.0000,0.0000,0.9945,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (132).jpg,healthy_leaf,healthy_leaf,0.9994,0.0001,0.0005,0.0000,0.0000,0.9994,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (133).jpg,healthy_leaf,healthy_leaf,0.9595,0.0063,0.0334,0.0000,0.0001,0.9595,0.0007
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (134).jpg,healthy_leaf,healthy_leaf,0.9941,0.0006,0.0051,0.0000,0.0000,0.9941,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (135).jpg,healthy_leaf,healthy_leaf,0.9888,0.0042,0.0069,0.0000,0.0000,0.9888,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (136).jpg,healthy_leaf,healthy_leaf,0.9827,0.0012,0.0159,0.0000,0.0000,0.9827,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (137).jpg,healthy_leaf,healthy_leaf,0.9469,0.0019,0.0507,0.0000,0.0000,0.9469,0.0004
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (138).jpg,healthy_leaf,healthy_leaf,0.9878,0.0019,0.0103,0.0000,0.0000,0.9878,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (139).jpg,healthy_leaf,healthy_leaf,0.9927,0.0037,0.0033,0.0000,0.0000,0.9927,0.0002
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (140).jpg,healthy_leaf,healthy_leaf,0.9475,0.0047,0.0463,0.0001,0.0002,0.9475,0.0013
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (171).jpg,healthy_leaf,healthy_leaf,0.9740,0.0063,0.0197,0.0000,0.0000,0.9740,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (172).jpg,healthy_leaf,healthy_leaf,0.9849,0.0025,0.0125,0.0000,0.0000,0.9849,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (173).jpg,healthy_leaf,healthy_leaf,0.9925,0.0004,0.0071,0.0000,0.0000,0.9925,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (174).jpg,healthy_leaf,healthy_leaf,0.9571,0.0083,0.0345,0.0000,0.0000,0.9571,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (175).jpg,healthy_leaf,healthy_leaf,0.9177,0.0326,0.0494,0.0000,0.0000,0.9177,0.0002
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (176).jpg,healthy_leaf,flea_beetle,0.5056,0.0803,0.5056,0.0006,0.0000,0.4134,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (177).jpg,healthy_leaf,healthy_leaf,0.9792,0.0060,0.0143,0.0000,0.0001,0.9792,0.0004
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (178).jpg,healthy_leaf,flea_beetle,0.4786,0.0502,0.4786,0.0014,0.0001,0.4691,0.0007
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (179).jpg,healthy_leaf,flea_beetle,0.6532,0.0594,0.6532,0.0004,0.0001,0.2868,0.0002
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (180).jpg,healthy_leaf,healthy_leaf,0.9889,0.0001,0.0104,0.0000,0.0001,0.9889,0.0004
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (21).jpg,healthy_leaf,healthy_leaf,0.9902,0.0069,0.0029,0.0000,0.0000,0.9902,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (22).jpg,healthy_leaf,healthy_leaf,0.9721,0.0056,0.0223,0.0000,0.0000,0.9721,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (23).jpg,healthy_leaf,healthy_leaf,0.9009,0.0518,0.0472,0.0000,0.0001,0.9009,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (24).jpg,healthy_leaf,healthy_leaf,0.9727,0.0113,0.0159,0.0000,0.0000,0.9727,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (25).jpg,healthy_leaf,healthy_leaf,0.9961,0.0010,0.0027,0.0000,0.0000,0.9961,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (26).jpg,healthy_leaf,healthy_leaf,0.9951,0.0006,0.0042,0.0000,0.0000,0.9951,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (27).jpg,healthy_leaf,healthy_leaf,0.9948,0.0007,0.0044,0.0000,0.0000,0.9948,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (28).jpg,healthy_leaf,healthy_leaf,0.9922,0.0032,0.0046,0.0000,0.0000,0.9922,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (29).jpg,healthy_leaf,healthy_leaf,0.9672,0.0058,0.0262,0.0000,0.0000,0.9672,0.0007
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (30).jpg,healthy_leaf,healthy_leaf,0.9942,0.0043,0.0014,0.0000,0.0000,0.9942,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (71).jpg,healthy_leaf,healthy_leaf,0.9107,0.0038,0.0847,0.0001,0.0004,0.9107,0.0004
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (72).jpg,healthy_leaf,healthy_leaf,0.9983,0.0004,0.0013,0.0000,0.0000,0.9983,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (73).jpg,healthy_leaf,healthy_leaf,0.9696,0.0011,0.0292,0.0000,0.0000,0.9696,0.0001
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (74).jpg,healthy_leaf,healthy_leaf,0.9906,0.0047,0.0046,0.0000,0.0000,0.9906,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (75).jpg,healthy_leaf,healthy_leaf,0.8972,0.0212,0.0810,0.0001,0.0001,0.8972,0.0004
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (76).jpg,healthy_leaf,healthy_leaf,0.9869,0.0017,0.0113,0.0000,0.0000,0.9869,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (77).jpg,healthy_leaf,healthy_leaf,0.9966,0.0011,0.0023,0.0000,0.0000,0.9966,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (78).jpg,healthy_leaf,healthy_leaf,0.9990,0.0003,0.0007,0.0000,0.0000,0.9990,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (79).jpg,healthy_leaf,healthy_leaf,0.9911,0.0013,0.0076,0.0000,0.0000,0.9911,0.0000
+ml\data\dataset\test\healthy_leaf\Healthy Leaf (80).jpg,healthy_leaf,healthy_leaf,0.9906,0.0019,0.0074,0.0000,0.0000,0.9906,0.0000
+ml\data\dataset\test\thrips\20230217_123623.jpg,thrips,thrips,0.5410,0.0001,0.0001,0.0971,0.3618,0.0000,0.5410
+ml\data\dataset\test\thrips\20230217_123933.jpg,thrips,thrips,0.9964,0.0000,0.0000,0.0014,0.0023,0.0000,0.9964
+ml\data\dataset\test\thrips\20230217_134825.jpg,thrips,thrips,0.9872,0.0001,0.0000,0.0122,0.0006,0.0000,0.9872
+ml\data\dataset\test\thrips\20230217_134924.jpg,thrips,thrips,0.7217,0.0014,0.0008,0.2659,0.0084,0.0017,0.7217
+ml\data\dataset\test\thrips\20230220_091931.jpg,thrips,thrips,0.9982,0.0000,0.0000,0.0003,0.0014,0.0001,0.9982
+ml\data\dataset\test\thrips\20230220_091933.jpg,thrips,thrips,0.9892,0.0000,0.0000,0.0019,0.0088,0.0001,0.9892
+ml\data\dataset\test\thrips\20230220_092015.jpg,thrips,thrips,0.9958,0.0000,0.0000,0.0042,0.0000,0.0000,0.9958
+ml\data\dataset\test\thrips\20230220_092127.jpg,thrips,thrips,0.9999,0.0000,0.0000,0.0001,0.0000,0.0000,0.9999
+ml\data\dataset\test\thrips\20230220_092230.jpg,thrips,thrips,0.9964,0.0000,0.0000,0.0036,0.0000,0.0000,0.9964
+ml\data\dataset\test\thrips\20230220_092302.jpg,thrips,thrips,0.9980,0.0004,0.0000,0.0014,0.0000,0.0000,0.9980
+ml\data\dataset\test\thrips\20230220_103515.jpg,thrips,thrips,0.9930,0.0000,0.0000,0.0065,0.0004,0.0000,0.9930
+ml\data\dataset\test\thrips\20230220_103602.jpg,thrips,thrips,0.9755,0.0000,0.0000,0.0243,0.0001,0.0000,0.9755
+ml\data\dataset\test\thrips\20230220_103746.jpg,thrips,thrips,0.9995,0.0000,0.0000,0.0005,0.0000,0.0000,0.9995
+ml\data\dataset\test\thrips\20230220_104021.jpg,thrips,thrips,0.9996,0.0000,0.0000,0.0004,0.0000,0.0000,0.9996
+ml\data\dataset\test\thrips\20230220_104451.jpg,thrips,thrips,0.9676,0.0000,0.0000,0.0323,0.0000,0.0000,0.9676
+ml\data\dataset\test\thrips\20230220_104955.jpg,thrips,thrips,0.9284,0.0001,0.0000,0.0673,0.0040,0.0001,0.9284
+ml\data\dataset\test\thrips\20230220_105147.jpg,thrips,thrips,0.9941,0.0000,0.0000,0.0059,0.0000,0.0000,0.9941
+ml\data\dataset\test\thrips\20230220_105221.jpg,thrips,thrips,0.9998,0.0000,0.0000,0.0002,0.0000,0.0000,0.9998
+ml\data\dataset\test\thrips\20230220_105312.jpg,thrips,thrips,0.9993,0.0000,0.0000,0.0007,0.0000,0.0000,0.9993
+ml\data\dataset\test\thrips\IMG20230217123754.jpg,thrips,thrips,0.9996,0.0000,0.0000,0.0004,0.0000,0.0000,0.9996
+ml\data\dataset\test\thrips\IMG20230217124127.jpg,thrips,thrips,0.9984,0.0000,0.0000,0.0016,0.0000,0.0000,0.9984
+ml\data\dataset\test\thrips\IMG20230217124148.jpg,thrips,thrips,0.9960,0.0000,0.0000,0.0012,0.0028,0.0000,0.9960
+ml\data\dataset\test\thrips\IMG20230217124213.jpg,thrips,thrips,0.9979,0.0000,0.0000,0.0021,0.0000,0.0000,0.9979
+ml\data\dataset\test\thrips\IMG20230217124232.jpg,thrips,thrips,0.9997,0.0000,0.0000,0.0003,0.0001,0.0000,0.9997
+ml\data\dataset\test\thrips\IMG20230217124333.jpg,thrips,thrips,0.9890,0.0000,0.0000,0.0110,0.0000,0.0000,0.9890
+ml\data\dataset\test\thrips\IMG20230217124511.jpg,thrips,thrips,0.9979,0.0000,0.0000,0.0020,0.0000,0.0000,0.9979
+ml\data\dataset\test\thrips\IMG20230217124514.jpg,thrips,thrips,0.9975,0.0000,0.0000,0.0024,0.0000,0.0000,0.9975
+ml\data\dataset\test\thrips\IMG20230217133427.jpg,thrips,thrips,0.9991,0.0000,0.0000,0.0009,0.0000,0.0000,0.9991
+ml\data\dataset\test\thrips\IMG20230217133458.jpg,thrips,thrips,0.9965,0.0000,0.0000,0.0035,0.0000,0.0000,0.9965
+ml\data\dataset\test\thrips\IMG20230217134529.jpg,thrips,thrips,0.9895,0.0000,0.0000,0.0105,0.0000,0.0000,0.9895
+ml\data\dataset\test\thrips\IMG20230217134917.jpg,thrips,thrips,0.9964,0.0000,0.0000,0.0035,0.0001,0.0000,0.9964
+ml\data\dataset\test\thrips\IMG20230220092258.jpg,thrips,thrips,0.9956,0.0000,0.0000,0.0044,0.0000,0.0000,0.9956
+ml\data\dataset\test\thrips\IMG20230220105035.jpg,thrips,thrips,0.9813,0.0005,0.0001,0.0164,0.0016,0.0001,0.9813
+ml\data\dataset\test\thrips\IMG_20230217_133424.jpg,thrips,fruit_shoot_borer,0.9158,0.0000,0.0000,0.9158,0.0003,0.0000,0.0839
+ml\data\dataset\test\thrips\IMG_20230217_133527.jpg,thrips,thrips,0.9964,0.0000,0.0000,0.0036,0.0000,0.0000,0.9964
+ml\data\dataset\test\thrips\IMG_20230217_133531.jpg,thrips,thrips,0.9918,0.0000,0.0000,0.0081,0.0000,0.0000,0.9918
+ml\data\dataset\test\thrips\IMG_20230217_133534.jpg,thrips,thrips,0.9666,0.0001,0.0000,0.0324,0.0008,0.0000,0.9666
+ml\data\dataset\test\thrips\IMG_20230217_133605.jpg,thrips,thrips,0.9980,0.0001,0.0000,0.0019,0.0000,0.0000,0.9980
+ml\data\dataset\test\thrips\IMG_20230217_133631.jpg,thrips,thrips,0.8895,0.0001,0.0000,0.1105,0.0000,0.0000,0.8895
+ml\data\dataset\test\thrips\IMG_20230217_133635.jpg,thrips,thrips,0.9913,0.0000,0.0000,0.0087,0.0000,0.0000,0.9913
+ml\data\dataset\test\thrips\IMG_20230217_133641.jpg,thrips,fruit_shoot_borer,0.7545,0.0000,0.0000,0.7545,0.0000,0.0000,0.2455
+ml\data\dataset\test\thrips\IMG_20230217_134622.jpg,thrips,thrips,0.9894,0.0002,0.0000,0.0104,0.0000,0.0000,0.9894
+ml\data\dataset\test\thrips\IMG_20230217_134625.jpg,thrips,thrips,0.9970,0.0000,0.0000,0.0029,0.0000,0.0001,0.9970
+ml\data\dataset\test\thrips\IMG_20230217_134715.jpg,thrips,thrips,0.9917,0.0012,0.0000,0.0071,0.0000,0.0000,0.9917
+ml\data\dataset\test\thrips\IMG_20230217_134729.jpg,thrips,thrips,0.9865,0.0001,0.0000,0.0134,0.0000,0.0000,0.9865
+ml\data\dataset\test\thrips\IMG_20230217_134733.jpg,thrips,thrips,0.9845,0.0003,0.0000,0.0150,0.0002,0.0000,0.9845
+ml\data\dataset\test\thrips\IMG_20230217_134850.jpg,thrips,thrips,0.8767,0.0001,0.0000,0.1230,0.0000,0.0000,0.8767
+ml\data\dataset\test\thrips\IMG_20230220_091844.jpg,thrips,thrips,0.9999,0.0000,0.0000,0.0000,0.0000,0.0000,0.9999
+ml\data\dataset\test\thrips\IMG_20230220_091900.jpg,thrips,thrips,0.9963,0.0000,0.0000,0.0037,0.0000,0.0000,0.9963
+ml\data\dataset\test\thrips\IMG_20230220_092203.jpg,thrips,thrips,0.9985,0.0000,0.0000,0.0015,0.0000,0.0000,0.9985

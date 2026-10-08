@@ -1,0 +1,63 @@
+{
+  "model": "efficientnetb0_v3_baseline",
+  "test_accuracy": 0.8357142857142857,
+  "macro_f1": 0.8229719115329498,
+  "size_mb": 16.334014892578125,
+  "ms_per_image": 115.98103799995442,
+  "recall": {
+    "aphids": 0.8,
+    "flea_beetle": 0.56,
+    "fruit_shoot_borer": 0.9,
+    "healthy": 0.9125,
+    "thrips": 0.96
+  },
+  "weak_classes": [
+    "flea_beetle"
+  ],
+  "by_source": {
+    "aphids | Aphids_original": {
+      "n": 20,
+      "correct": 16
+    },
+    "aphids | Flea Beetles_original": {
+      "n": 22,
+      "correct": 22
+    },
+    "aphids | Insect Pest": {
+      "n": 2,
+      "correct": 1
+    },
+    "aphids | NEW_URBAN_ORIG": {
+      "n": 6,
+      "correct": 1
+    },
+    "flea_beetle | EGGPLANT_ANGAT_ORIG": {
+      "n": 8,
+      "correct": 5
+    },
+    "flea_beetle | Flea Beetles_original": {
+      "n": 10,
+      "correct": 3
+    },
+    "flea_beetle | Insect Pest": {
+      "n": 32,
+      "correct": 20
+    },
+    "fruit_shoot_borer | camera": {
+      "n": 50,
+      "correct": 45
+    },
+    "healthy | Healthy Leaf": {
+      "n": 30,
+      "correct": 30
+    },
+    "healthy | camera": {
+      "n": 50,
+      "correct": 43
+    },
+    "thrips | camera": {
+      "n": 50,
+      "correct": 48
+    }
+  }
+}

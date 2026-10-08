@@ -1,0 +1,49 @@
+Model: ml\models\efficientnetb0_v4_finetuned.keras
+Test images: 300
+Test accuracy: 86.33%  (target >= 85%: OK)
+Macro F1: 0.860
+Laki ng model: 27.7 MB
+Bilis: 79.2 ms/image (CPU, batch 1)
+
+                    precision    recall  f1-score   support
+
+             aphids     0.792     0.840     0.816        50
+        flea_beetle     0.725     0.580     0.644        50
+  fruit_shoot_borer     0.958     0.920     0.939        50
+            healthy     1.000     0.940     0.969        50
+       healthy_leaf     0.825     0.940     0.879        50
+             thrips     0.873     0.960     0.914        50
+
+           accuracy                         0.863       300
+          macro avg     0.862     0.863     0.860       300
+       weighted avg     0.862     0.863     0.860       300
+
+Recall bawat class (target >= 80%):
+  aphids                84.0%  OK
+  flea_beetle           58.0%  MABABA
+  fruit_shoot_borer     92.0%  OK
+  healthy               94.0%  OK
+  healthy_leaf          94.0%  OK
+  thrips                96.0%  OK
+
+Mga nagkakapalitan (totoo -> hinula, bilang):
+  flea_beetle -> aphids: 11
+  flea_beetle -> healthy_leaf: 10
+  aphids -> flea_beetle: 8
+  fruit_shoot_borer -> thrips: 4
+  healthy -> thrips: 3
+  healthy_leaf -> flea_beetle: 3
+  thrips -> fruit_shoot_borer: 2
+
+Tama bawat class at source (totoong class | source):
+  aphids            Aphids_original            18/20   90.0%
+  aphids            Flea Beetles_original      22/22  100.0%
+  aphids            Insect Pest                 1/2    50.0%
+  aphids            NEW_URBAN_ORIG              1/6    16.7%
+  flea_beetle       EGGPLANT_ANGAT_ORIG         4/8    50.0%
+  flea_beetle       Flea Beetles_original       4/10   40.0%
+  flea_beetle       Insect Pest                21/32   65.6%
+  fruit_shoot_borer camera                     46/50   92.0%
+  healthy           camera                     47/50   94.0%
+  healthy_leaf      Healthy Leaf               47/50   94.0%
+  thrips            camera                     48/50   96.0%

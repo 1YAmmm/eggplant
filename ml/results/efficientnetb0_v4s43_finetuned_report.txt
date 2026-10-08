@@ -1,0 +1,50 @@
+Model: ml\models\efficientnetb0_v4s43_finetuned.keras
+Test images: 300
+Test accuracy: 84.67%  (target >= 85%: HINDI PA)
+Macro F1: 0.845
+Laki ng model: 27.7 MB
+Bilis: 91.2 ms/image (CPU, batch 1)
+
+                    precision    recall  f1-score   support
+
+             aphids     0.841     0.740     0.787        50
+        flea_beetle     0.660     0.620     0.639        50
+  fruit_shoot_borer     0.936     0.880     0.907        50
+            healthy     1.000     0.940     0.969        50
+       healthy_leaf     0.797     0.940     0.862        50
+             thrips     0.857     0.960     0.906        50
+
+           accuracy                         0.847       300
+          macro avg     0.848     0.847     0.845       300
+       weighted avg     0.848     0.847     0.845       300
+
+Recall bawat class (target >= 80%):
+  aphids                74.0%  MABABA
+  flea_beetle           62.0%  MABABA
+  fruit_shoot_borer     88.0%  OK
+  healthy               94.0%  OK
+  healthy_leaf          94.0%  OK
+  thrips                96.0%  OK
+
+Mga nagkakapalitan (totoo -> hinula, bilang):
+  aphids -> flea_beetle: 13
+  flea_beetle -> healthy_leaf: 12
+  flea_beetle -> aphids: 7
+  fruit_shoot_borer -> thrips: 6
+  healthy_leaf -> flea_beetle: 3
+  healthy -> thrips: 2
+  thrips -> fruit_shoot_borer: 2
+  healthy -> fruit_shoot_borer: 1
+
+Tama bawat class at source (totoong class | source):
+  aphids            Aphids_original            13/20   65.0%
+  aphids            Flea Beetles_original      22/22  100.0%
+  aphids            Insect Pest                 1/2    50.0%
+  aphids            NEW_URBAN_ORIG              1/6    16.7%
+  flea_beetle       EGGPLANT_ANGAT_ORIG         5/8    62.5%
+  flea_beetle       Flea Beetles_original       7/10   70.0%
+  flea_beetle       Insect Pest                19/32   59.4%
+  fruit_shoot_borer camera                     44/50   88.0%
+  healthy           camera                     47/50   94.0%
+  healthy_leaf      Healthy Leaf               47/50   94.0%
+  thrips            camera                     48/50   96.0%

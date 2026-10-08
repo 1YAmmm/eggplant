@@ -1,0 +1,37 @@
+Dataset: ml\data\dataset_v4
+Expected per class: {'train': 200, 'valid': 50, 'test': 50}
+
+[1] Class folders
+  [ OK ] train: 6 class folders, tugma sa expected
+  [ OK ] valid: 6 class folders, tugma sa expected
+  [ OK ] test: 6 class folders, tugma sa expected
+
+[2] Bilang ng images / [3] Mabubuksan ba
+  class                  train   valid    test
+  aphids                   200      50      50
+  flea_beetle              200      50      50
+  fruit_shoot_borer        200      50      50
+  healthy                  200      50      50
+  healthy_leaf             200      50      50
+  thrips                   200      50      50
+  TOTAL                   1200     300     300
+  [ OK ] pantay at tama ang bilang bawat class sa bawat split
+  [ OK ] mabubuksan ang lahat ng image
+
+[4] Duplicates at leakage (file hash)
+  [ OK ] walang parehong file hash sa pagitan ng train / valid / test
+  [ OK ] walang duplicate sa loob ng bawat split
+
+[5] Near-duplicates (dHash, tolerant sa flip at rotation) at magkakalapit na kuha
+  [ OK ] walang near-duplicate sa pagitan ng train / valid / test
+  [ OK ] walang near-duplicate sa pagitan ng magkaibang class
+  [INFO] near-duplicate sa loob ng iisang split at class: 43 pares (hindi leakage)
+  [WARN] valid/test photos na may train photo (parehong class) sa loob ng 30 segundo: 63 / 299 (babala lang; hindi ito exact o near duplicate)
+         fruit_shoot_borer test  19
+         fruit_shoot_borer valid 10
+         healthy           test  13
+         healthy           valid 9
+         thrips            test  9
+         thrips            valid 3
+
+RESULT: PASS

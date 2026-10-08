@@ -1,0 +1,32 @@
+Model: ml\models\efficientnetb0_fleaplus_baseline.keras
+Test images: 250
+Test accuracy: 83.20%  (target >= 85%: HINDI PA)
+Macro F1: 0.833
+Laki ng model: 16.3 MB
+Bilis: 73.3 ms/image (CPU, batch 1)
+
+                    precision    recall  f1-score   support
+
+             aphids     0.685     0.740     0.712        50
+        flea_beetle     0.717     0.660     0.688        50
+  fruit_shoot_borer     0.957     0.900     0.928        50
+            healthy     1.000     0.900     0.947        50
+             thrips     0.828     0.960     0.889        50
+
+           accuracy                         0.832       250
+          macro avg     0.838     0.832     0.833       250
+       weighted avg     0.838     0.832     0.833       250
+
+Recall bawat class (target >= 80%):
+  aphids                74.0%  MABABA
+  flea_beetle           66.0%  MABABA
+  fruit_shoot_borer     90.0%  OK
+  healthy               90.0%  OK
+  thrips                96.0%  OK
+
+Mga nagkakapalitan (totoo -> hinula, bilang):
+  flea_beetle -> aphids: 17
+  aphids -> flea_beetle: 13
+  fruit_shoot_borer -> thrips: 5
+  healthy -> thrips: 5
+  thrips -> fruit_shoot_borer: 2
