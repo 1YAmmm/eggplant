@@ -187,7 +187,7 @@ Flexible ang tagal. Beginner ka, kaya okay lang kung humaba. Huwag lumipat sa su
 **Goal:** Mapataas ang accuracy at mapili ang pinakamahusay na model.
 
 - [ ] **Fine-tuning:** i-unfreeze ang huling ~30 layers (BatchNorm layers ay naka-freeze pa rin), learning rate `1e-5`, 10 pang epochs
-- [ ] Gawin ang confusion matrix (`sklearn`) at i-save bilang larawan
+- [ ] Gawin ang confusion matrix (numpy sa `evaluate.py`, hindi `sklearn.metrics`: na-block ng Application Control policy ng Windows ang DLL nito) at i-save bilang larawan
 - [ ] Gawin ang classification report (precision, recall, F1 bawat class)
 - [ ] Alamin kung aling mga pest ang nagkakapalitan (hal. thrips vs aphids)
 - [ ] Kung may mahinang class: dagdagan o linisin ang images ng class na iyon (balik sa Sprint 1 kung kailangan)
@@ -304,7 +304,7 @@ Panimulang rekomendasyon: subukan ang **A** sa 4C. Kung pumalya ang conversion, 
 
 - [x] Sprint 0: Setup
 - [ ] Sprint 1: Dataset (halos tapos: pasado ang `check_dataset.py` na 200/50/50 at walang leakage. Natitira: punan mo ang mga source at license na hindi ko alam sa `ml/DATA_SOURCES.md`, at ipa-confirm sa agriculturist ang mga label. Tingnan ang `PHASE1_SUMMARY.md`)
-- [ ] Sprint 2: Baseline Training (naisulat na ang `common.py`, `train.py`, `evaluate.py`, `predict.py`; hindi pa na-run o na-test)
+- [ ] Sprint 2: Baseline Training (naisulat na ang `common.py`, `train.py`, `evaluate.py`, `predict.py`; na-smoke test na ang tatlong script (1 epoch, gumagana; nagkakatugma ang preprocessing ng `predict.py` at `evaluate.py`). Natitira: totoong training at evaluation)
 - [ ] Sprint 3: Fine-tuning at Comparison
 - [ ] Sprint 4: Real-World Testing at Finalize
 - [ ] Sprint 5: Next.js + Integration
