@@ -1,0 +1,18 @@
+{
+  "model": "mobilenetv2_finetuned",
+  "test_accuracy": 0.824,
+  "macro_f1": 0.8237830650338598,
+  "size_mb": 20.788389205932617,
+  "ms_per_image": 71.06907199999114,
+  "recall": {
+    "aphids": 0.64,
+    "flea_beetle": 0.76,
+    "fruit_shoot_borer": 0.82,
+    "healthy": 0.92,
+    "thrips": 0.98
+  },
+  "weak_classes": [
+    "aphids",
+    "flea_beetle"
+  ]
+}

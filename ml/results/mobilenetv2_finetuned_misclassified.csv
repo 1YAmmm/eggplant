@@ -1,0 +1,45 @@
+file,true,predicted,confidence
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0001.jpg,aphids,flea_beetle,0.784
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0002.jpg,aphids,flea_beetle,0.566
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0003.jpg,aphids,flea_beetle,0.903
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0005.jpg,aphids,flea_beetle,0.837
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0006.jpg,aphids,flea_beetle,0.921
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0007.jpg,aphids,flea_beetle,0.813
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0008.jpg,aphids,flea_beetle,0.889
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0009.jpg,aphids,flea_beetle,0.603
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0010.jpg,aphids,flea_beetle,0.912
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0021.jpg,aphids,flea_beetle,0.615
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0029.jpg,aphids,flea_beetle,0.832
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0030.jpg,aphids,flea_beetle,0.502
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0138.jpg,aphids,flea_beetle,0.924
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\Aphids_original0139.jpg,aphids,flea_beetle,0.720
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\NEW_URBAN_ORIG (52).jpg,aphids,flea_beetle,0.686
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\NEW_URBAN_ORIG (53).jpg,aphids,flea_beetle,0.755
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\NEW_URBAN_ORIG (58).jpg,aphids,flea_beetle,0.885
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\aphids\NEW_URBAN_ORIG (72).jpg,aphids,flea_beetle,0.510
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\EGGPLANT_ANGAT_ORIG (192).jpg,flea_beetle,aphids,0.795
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0028.jpg,flea_beetle,aphids,0.526
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0209.jpg,flea_beetle,aphids,0.574
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0212.jpg,flea_beetle,aphids,0.820
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0214.jpg,flea_beetle,aphids,0.613
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0218.jpg,flea_beetle,aphids,0.581
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0220.jpg,flea_beetle,aphids,0.598
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0223.jpg,flea_beetle,aphids,0.820
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0261.jpg,flea_beetle,aphids,0.564
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0266.jpg,flea_beetle,aphids,0.613
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0280.jpg,flea_beetle,aphids,0.735
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\flea_beetle\Flea Beetles_original0281.jpg,flea_beetle,aphids,0.549
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\20230220_125745.jpg,fruit_shoot_borer,thrips,0.948
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\20230220_130956.jpg,fruit_shoot_borer,thrips,0.812
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\20230310_150100.jpg,fruit_shoot_borer,thrips,0.828
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\IMG20230220131107.jpg,fruit_shoot_borer,thrips,0.831
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_130453.jpg,fruit_shoot_borer,thrips,0.777
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_131017.jpg,fruit_shoot_borer,thrips,0.581
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_131020.jpg,fruit_shoot_borer,thrips,0.976
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133912.jpg,fruit_shoot_borer,thrips,0.543
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\fruit_shoot_borer\IMG_20230220_133959.jpg,fruit_shoot_borer,healthy,0.506
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\healthy\20230220_094111.jpg,healthy,thrips,0.618
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\healthy\20230310_135418.jpg,healthy,thrips,0.933
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\healthy\20230310_135731.jpg,healthy,thrips,0.790
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\healthy\20230310_140123.jpg,healthy,fruit_shoot_borer,0.499
+C:\Users\laman\OneDrive\Documents\nextjsProject\eggplant\ml\data\dataset\test\thrips\20230217_134924.jpg,thrips,fruit_shoot_borer,0.982
