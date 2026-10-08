@@ -21,13 +21,54 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 
 import common
 from common import keras, tf
 
 RECALL_TARGET = 0.80
 ACCURACY_TARGET = 0.85
+
+
+# numpy lang ang gamit (walang sklearn.metrics): na-block ng Application Control policy
+# ng Windows ang compiled DLL ng sklearn.metrics sa makinang ito.
+def confusion_matrix(y_true, y_pred, n_classes):
+    cm = np.zeros((n_classes, n_classes), dtype=int)
+    np.add.at(cm, (y_true, y_pred), 1)
+    return cm
+
+
+def classification_report(cm, class_names, digits=3):
+    """Parehong format ng sklearn: (report_dict, report_text). Hilera = totoo, hanay = hinula."""
+    tp = np.diag(cm).astype(float)
+    support = cm.sum(axis=1)
+    predicted = cm.sum(axis=0)
+    precision = np.divide(tp, predicted, out=np.zeros_like(tp), where=predicted > 0)
+    recall = np.divide(tp, support, out=np.zeros_like(tp), where=support > 0)
+    denom = precision + recall
+    f1 = np.divide(2 * precision * recall, denom, out=np.zeros_like(tp), where=denom > 0)
+
+    total = int(support.sum())
+    accuracy = tp.sum() / total if total else 0.0
+    avgs = {
+        "macro avg": (precision.mean(), recall.mean(), f1.mean()),
+        "weighted avg": tuple(np.average(m, weights=support) if total else 0.0 for m in (precision, recall, f1)),
+    }
+
+    report = {
+        c: {"precision": precision[i], "recall": recall[i], "f1-score": f1[i], "support": int(support[i])}
+        for i, c in enumerate(class_names)
+    }
+    report["accuracy"] = accuracy
+    for k, (p, r, f) in avgs.items():
+        report[k] = {"precision": p, "recall": r, "f1-score": f, "support": total}
+
+    w = max(len(k) for k in report) + 2
+    row = lambda name, p, r, f, s: f"{name:>{w}} {p:>9.{digits}f} {r:>9.{digits}f} {f:>9.{digits}f} {s:>9}"
+    lines = [f"{'':>{w}} {'precision':>9} {'recall':>9} {'f1-score':>9} {'support':>9}", ""]
+    lines += [row(c, *(report[c][k] for k in ("precision", "recall", "f1-score", "support"))) for c in class_names]
+    lines += ["", f"{'accuracy':>{w}} {'':>9} {'':>9} {accuracy:>9.{digits}f} {total:>9}"]
+    lines += [row(k, *avgs[k], total) for k in avgs]
+    return report, "\n".join(lines) + "\n"
 
 
 def measure_speed(model, ds, n_images=50):
@@ -79,11 +120,10 @@ def evaluate(model_path: Path, speed_images: int):
     y_true = np.concatenate([y.numpy() for _, y in test_ds])
     y_pred = probs.argmax(axis=1)
 
-    acc = accuracy_score(y_true, y_pred)
-    macro_f1 = f1_score(y_true, y_pred, average="macro")
-    report_dict = classification_report(y_true, y_pred, target_names=class_names, output_dict=True, zero_division=0)
-    report_text = classification_report(y_true, y_pred, target_names=class_names, digits=3, zero_division=0)
-    cm = confusion_matrix(y_true, y_pred, labels=range(len(class_names)))
+    cm = confusion_matrix(y_true, y_pred, len(class_names))
+    report_dict, report_text = classification_report(cm, class_names)
+    acc = report_dict["accuracy"]
+    macro_f1 = report_dict["macro avg"]["f1-score"]
 
     ms = measure_speed(model, test_ds, speed_images)
     size_mb = model_path.stat().st_size / (1024 * 1024)

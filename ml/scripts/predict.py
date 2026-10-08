@@ -18,18 +18,21 @@ import csv
 from pathlib import Path
 
 import numpy as np
-from PIL import Image
 
 import common
+from common import tf
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 
 def load_image(path: Path) -> np.ndarray:
-    """RGB, 224x224, raw 0-255 (pareho ng gamit ng model; nasa loob nito ang preprocessing)."""
-    with Image.open(path) as im:
-        im = im.convert("RGB").resize((common.IMG_SIZE, common.IMG_SIZE), Image.BILINEAR)
-        return np.asarray(im, dtype=np.float32)
+    """RGB, 224x224, raw 0-255 (nasa loob ng model ang preprocessing).
+
+    Parehong decode at resize ng image_dataset_from_directory (ginamit sa training at evaluate.py),
+    kasi nag-iiba ang hula kapag PIL ang nag-resize.
+    """
+    img = tf.io.decode_image(tf.io.read_file(str(path)), channels=3, expand_animations=False)
+    return tf.image.resize(img, (common.IMG_SIZE, common.IMG_SIZE)).numpy().astype(np.float32)
 
 
 def predict_paths(model, paths, class_names, batch_size=32):
